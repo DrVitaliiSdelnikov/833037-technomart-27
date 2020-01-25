@@ -1,0 +1,220 @@
+<html>
+<head>
+	<title>Техномарт</title>
+    <meta charset=utf-8>
+    <link rel=stylesheet href=css/style.css>
+
+</head>
+<body>
+    <header>
+        <section class="header_top">
+            <a href="index.html"></a>
+              <img src="img/" alt="Техномарт - Интернет-магазин строительных материалов" width="220px" height="47px">
+            </a>
+            <input type="search" value="Поиск:">
+        <ul>
+            <li><a href="#"><!--Спецсимвол-->Закладки:</a></li>
+            <li><a href="#"><!--Спецсимвол-->Корзина:</a></li> <!--Я предполагаю, что символ корзины и флажочка спецсимволов html. Например, сивол корзины - &#128722;. Думаю так будет лучше, чем загружать картинку. (только мысли) -->
+            <li><a href="#">Оформить заказ</a></li>
+        </ul>
+        </section>
+
+        <section class="header_mid">
+            <p class="header_text"> <!--Первая мысль - это использовать "span", но решил остановиться на "р", что лучше?-->
+                Интернет-магазин <br>
+                строительных материалов <br>
+                и инструментов для ремонта <br>
+            </p>
+
+            <p class="header_info">
+                <!--спецсимвол--><a href="tel:+78125550555">+7 (812) 55-50-555</a>
+                <br>г. Санкт-Петербург. ул. Б. Конюшенная, д.19/8
+
+            </p>
+
+
+            <div class="header_mid_butt">
+                <!--спецсимвол--><button type="button">Customer_name</button>
+            
+            <ul>
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+            </div>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Компания</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Спецпредложения</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <aside>
+            <h3>Производители:</h3>
+            <ul>
+                <li><input type="checkbox" name="bosch_cb" value="bosch_cb" id="bosch_cb" checked><label for="bosch_cb">Bosch</label></li>
+                <li><input type="checkbox" name="interskol_cb" value="interskol_cb" id="interskol_cb"><label for="interskol_cb">Интерскол</label></li>
+                <li><input type="checkbox" name="makita_cb" value="makita_cb" id="makita_cb" checked><label for="makita_cb">Makita</label></li>
+                <li><input type="checkbox" name="dewalt_cb" value="dewalt_cb" id="dewalt_cb"><label for="dewalt_cb">Dewalt</label></li>
+                <li><input type="checkbox" name="hitachi_cb" value="hitachi_cb" id="hitachi_cb"><label for="hitachi_cb">Hitachi</label></li>
+            </ul>
+            <!--<hr>-->
+            <h3>Питание:</h3>
+            <ul>
+                <li><input type="radio" name="accomul_rd" value="accomul_rd" id="accomul_rd" checked><label for="accomul_rd">Аккумуляторные</label></li>
+                <li><input type="radio" name="setev_rd" value="setev_rd" id="setev_rd"><label for="setev_rd">Сетевые</label></li>
+            </ul>
+            <input type="button" name="show_goods" value="Показать"> <!--Правильно ли использовать input или надо было использовать button? Где лучше использовать button, а где input?-->
+        </aside>
+
+        <section class="market_goods">
+            <ul>
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 3000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 3000</h3>
+                    <span>22500 Р.</span><br>
+                    <span>15500 Р.</span>
+                </li>
+
+
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 6000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 6000 </h3>
+                    <span>30500 Р.</span><br>
+                    <span>25500 Р.</span>
+                </li>
+
+
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 2000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 6000 </h3>
+                    <span></span><br>
+                    <span>12500 Р.</span>
+                </li>
+
+
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 3000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 6000 </h3>
+                    <span>22500 Р.</span><br>
+                    <span>15500 Р.</span>
+                </li>
+
+
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 6000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 6000 </h3>
+                    <span>30500 Р.</span><br>
+                    <span>25500 Р.</span>
+                </li>
+
+
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 2000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 2000 </h3>
+                    <span></span><br>
+                    <span>12500 Р.</span>
+                </li>
+
+
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 3000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 3000 </h3>
+                    <span>22500 Р.</span><br>
+                    <span>15500 Р.</span>
+                </li>
+
+
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 6000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 6000 </h3>
+                    <span>30500 Р.</span><br>
+                    <span>25500 Р.</span>
+                </li>
+
+
+                <li>
+                    <img src="#" alt="Перфоратор BOSCH
+                    BFG 2000" height="170" width="218"><br>
+                    <h3>Перфоратор BOSCH BFG 2000</h3>
+                    <span></span><br>
+                    <span>12500 Р.</span>
+                </li>
+            </ul>
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <section class="top_footer">
+            <img src="img/" alt="Техномарт - Интернет-магазин строительных материалов" width="220px" height="68px">
+            <ul>
+                <li href="#">Компания</li>
+                <li href="#">Новости</li>
+                <li href="#">Каталог</li>
+                <li href="#">Доставка</li>
+                <li href="#">Доставка</li>
+            </ul>
+        </section>
+
+        <section class="mid_footer">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                +7 (812) 555-05-55
+            </p>
+            <ul>
+                <li href="#">Материалы</li>
+                <li href="#">Техника</li>
+                <li href="#">Инструмент</li>
+                <li href="#">Спецпредложения</li>
+            </ul>
+        </section>
+
+        <section class="butt_footer"> 
+            <p>
+                © 2010–2019 Компания «Техномарт» <br>
+                Все права защищены
+            </p>
+
+            <ul>
+                <li><a href="#">Вконтакте</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+
+
+            <ul>
+                <li>Обратная связь:<br>
+                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+                <li>Разработано — <br>
+                    <a href="htmlacademy.ru">htmlacademy.ru</a></li>
+            </ul>
+
+            
+
+        </section>
+    </footer>
+</body>
+</html>

@@ -13,10 +13,11 @@
 
             <div class="header-top">
                 <a href="index.html">
-                  <img src="img/" alt="Техномарт - Интернет-магазин строительных материалов" width="220px" height="47px">
+                  <img src="img/header/technomart-logo-header.svg" 
+                  alt="Техномарт - Интернет-магазин строительных материалов" width="109px" height="19px">
                 </a>
     
-                <input type="search" value="Поиск:">
+                <input type="search" placeholder="Поиск:">
     
     
                 <ul>
@@ -39,15 +40,16 @@
                     <br>г. Санкт-Петербург. ул. Б. Конюшенная, д.19/8
     
                 </p>
+
     
     
-                <ul class="header-mid-butt">
+                <ul class="header-acc-menu">
                     <li>
-                        <button type="button">Войти</button>
+                        <a href="#">Мои заказы</a> 
                     </li>
 
                     <li>
-                        <button type="button">Регистрация</button>
+                        <a href="#">Личный кабинет</a> 
                     </li>
                 </ul>
             </div>
@@ -63,8 +65,6 @@
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-
-                <h1>Перфораторы</h1>
             </nav>
     </header>
 
@@ -74,15 +74,62 @@
         
         <div>
             <ul> <!--Удали потом див!-->
-                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="index.html">Homepage</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Инструменты</a></li>
                 <li><a href="#">Перфораторы</a></li>
             </ul>
         </div> <!--Напоминлка, чтобы не потерять "хлебные крошки", потом удалю-->
         
+        <h1>Перфораторы</h1>
+
+
+        <div class="upper-menu">
+            <p>Фильтр:</p>
+
+            <ul><!--НАПОМИНАНИЕ! Проверь ссылки! Я поставил для интерактивности, могу убрать-->
+                <li><a href="#">Сортировка:</a></li>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>
+            </ul>
+
+            <ul><!--НАПОМИНАНИЕ! Проверь ссылки! -->
+                <li>
+                    <a href="#"><!--Еще эксперименты с svg-->
+                    <svg
+                    width="11px"
+                    height="10px"><!--Поставил ссылку временно, чтобы кнопка ощущалась-->
+                    <img src="img/main/icon-up-catal-main.svg" width="11px" height="10px">
+            </svg></a>
+                </li>
+
+                <li><!--НАПОМИНАНИЕ! Поменять стрелочку на дефолтную-->
+                    <a href="#"><svg
+                    width="11px"
+                    height="10px">
+                    <img src="img/main/icon-down-catal-main.svg" width="11px" height="10px">
+            </svg></a>
+                </li>
+            </ul>
+
+        </div>
+
         <aside>
             <h2>Производители:</h2>
+
+
+            <label for="price-range">Цена:</label>
+            <input type="range" min="0" max="5000" step="500" id="price-range">
+
+
+            <output name="minsum" for="price-range">
+            0
+            </output> <!--Не уверен здесь с выбором output (может просто <р>), наверно тут еще должна быть магия JS или еще что-то-->
+
+          
+
+
             <ul>
                 <li>
                     <input type="checkbox" name="bosch-cb" value="bosch-cb" id="bosch-cb" checked>
@@ -130,89 +177,101 @@
             <h2 style="visibility: hidden">Каталог перфораторов BOSCH</h2><!--Подумал оставить секцию, так как страница без нее выглядит странно + добавил оглавление-->
             <ul>
                 <li> 
-                    <img src="#" alt="Перфоратор BOSCH
+                    <img src="img/main/Perforator-3000-main.jpg" alt="Перфоратор BOSCH
                     BFG 3000" height="170" width="218">
                     <h3>Перфоратор BOSCH BFG 3000</h3>
-                    <p style="width: 70;">22500 Р. <!--Решил сделать через p и срезал лишний код-->
-                    15500 Р.</p>
-                    <!--Ранее было так 
-                    <span>22500 Р.</span><br>
-                    <span>15500 Р.</span> -->
+                    <p>22500 Р.</p>  <!--Решил сделать через p и срезал лишний код-->
+                    <p>15500 Р.</p> 
+                    <!--Сделал два <p>, чтобы можно было сделать для нее фон. Как я понял, под второй ценой не кнопка, а фон
+                        Это оптимальное решение?-->
+                    
                 </li>
 
 
                 <li>
-                    <img src="#" alt="Перфоратор BOSCH
+                    <img src="img/main/Perforator-6000-main.jpg" alt="Перфоратор BOSCH
                     BFG 6000" height="170" width="218">
                     <h3>Перфоратор BOSCH BFG 6000</h3>
-                    <p style="width: 70;">30500 Р.
-                   25500 Р.</p>
+                    <p>30500 Р.</P>
+                    <p>25500 Р.</p>
                 </li>
 
 
                 <li>
-                    <img src="#" alt="Перфоратор BOSCH
+                    <img src="img/main/Perforator-2000-main.jpg" alt="Перфоратор BOSCH
                     BFG 2000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000 </h3>
-                    <p style="width: 70;">12500 Р.</p>
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <p>12500 Р.</p>
                 </li>
 
 
                 <li>
-                    <img src="#" alt="Перфоратор BOSCH
+                    <img src="img/main/Perforator-3000-main.jpg" alt="Перфоратор BOSCH
                     BFG 3000" height="170" width="218">
                     <h3>Перфоратор BOSCH BFG 6000 </h3>
-                    <p style="width: 70;">22500 Р.
-                    15500 Р.</p>
+                    <p>22500 Р.</p>
+                    <p>15500 Р.</p>
                 </li>
 
 
                 <li>
-                    <img src="#" alt="Перфоратор BOSCH
+                    <img src="img/main/Perforator-6000-main.jpg" alt="Перфоратор BOSCH
                     BFG 6000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000 </h3>
-                    <p style="width: 70;">30500 Р.
-                    25500 Р.</p>
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <p>30500 Р.</p>
+                    <p>25500 Р.</p>
                 </li>
 
 
                 <li>
-                    <img src="#" alt="Перфоратор BOSCH
-                    BFG 2000" height="170" width="218"><br>
-                    <h3>Перфоратор BOSCH BFG 2000 </h3>
-                    <p style="width: 70;">12500 Р.</p>
-                </li>
-
-
-                <li>
-                    <img src="#" alt="Перфоратор BOSCH
-                    BFG 3000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 3000 </h3>
-                    <p style="width: 70;">22500 Р.
-                    15500 Р.</p>
-                </li>
-
-
-                <li>
-                    <img src="#" alt="Перфоратор BOSCH
-                    BFG 6000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000 </h3>
-                    <p style="width: 70;">30500 Р.
-                    25500 Р.</p>
-                </li>
-
-
-                <li>
-                    <img src="#" alt="Перфоратор BOSCH
+                    <img src="img/main/Perforator-2000-main.jpg" alt="Перфоратор BOSCH
                     BFG 2000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 2000</h3>
-                    <p style="width: 70;">12500 Р.</p>
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <p>12500 Р.</p>
+                </li>
+
+
+                <li>
+                    <img src="img/main/Perforator-3000-main.jpg" alt="Перфоратор BOSCH
+                    BFG 3000" height="170" width="218">
+                    <h3>Перфоратор BOSCH BFG 6000 </h3>
+                    <p>22500 Р.</p>
+                    <p>15500 Р.</p>
+                </li>
+
+
+                <li>
+                    <img src="img/main/Perforator-6000-main.jpg" alt="Перфоратор BOSCH
+                    BFG 6000" height="170" width="218">
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <p>30500 Р.</p>
+                    <p>25500 Р.</p>
+                </li>
+
+
+                <li>
+                    <img src="img/main/Perforator-2000-main.jpg" alt="Перфоратор BOSCH
+                    BFG 2000" height="170" width="218">
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <p>12500 Р.</p>
                 </li>
             </ul>
         </section>
 
 
 
+
+        <article class="perfo-info">
+            <h2>Пара слов о перфораторах</h2>
+            
+            <p style="width: 1100px;">Перфоратор — универсальный строительный инструмент. 
+                Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                <br>
+                Существуют электромеханические и пневматические перфораторы. 
+                Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p> 
+        </article>
 
 
     </main>
@@ -231,7 +290,7 @@
                 <li><a href="#">Новости</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Доставка</a></li>
-                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
 
 

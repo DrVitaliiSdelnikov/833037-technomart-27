@@ -5,65 +5,71 @@
     <meta charset=utf-8>
     <link rel=stylesheet href=css/style.css>
 
-    </head>
+</head>
 <body>
+    
+    
     <header>
         <nav>
 
 
             <div class="header-top">
                 <a href="index.html">
-                  <img src="img/header/technomart-logo-header.svg" 
-                  alt="Техномарт - Интернет-магазин строительных материалов" width="109px" height="19px">
+                  <img src="img/" alt="Техномарт - Интернет-магазин строительных материалов" width="109" height="19">
                 </a>
     
-                <input type="search" placeholder="Поиск:">
+
+
+                <form action="url" method="get" class="header-top-search">      
+                    <input type="search" placeholder="Поиск:" name="sitesearch">
+                    <input type="submit">
+                 </form> 
     
+
     
-                <ul>
-                   <li><a href="#">Закладки:</a></li>
-                   <li><a href="#">Корзина:</a></li>
-                   <li><a href="#">Оформить заказ</a></li>
+                <ul class="header-top-tobuy">
+                   <li><a href="">Закладки:</a></li>
+                   <li><a href="">Корзина:</a></li>
+                   <li><a href="">Оформить заказ</a></li>
                 </ul>
             </div>
     
     
             <div class="header-mid">
-                <p class="header-text"> 
-                    Интернет-магазин строительных материалов <br><!--Найди способ избавиться от бр-->
+                <p class="header-mid-info"> 
+                    Интернет-магазин строительных материалов
                     и инструментов для ремонта
                 </p>
     
     
-                <p class="header-info" style="width: 500px;">
+                <p class="header-mid-contacts">
                     <a href="tel:+78125550555">+7 (812) 55-50-555</a> 
-                    <br>г. Санкт-Петербург. ул. Б. Конюшенная, д.19/8
+                    г. Санкт-Петербург. ул. Б. Конюшенная, д.19/8
     
                 </p>
 
     
     
-                <ul class="header-acc-menu">
-                    <li>
-                        <a href="#">Мои заказы</a> 
-                    </li>
+                <ul class="header-mid-user">
 
-                    <li>
-                        <a href="#">Личный кабинет</a> 
-                    </li>
+                    <li><a href="">(svg-иконка)username-account</a></li>
+                    <li><a href="">(svg-иконка)выход из аккаунта</a></li>
+                    <li><a href="">Мои заказы</a></li>
+                    <li><a href="">Личный кабинет</a></li>
+
                 </ul>
             </div>
     
     
     
-                <ul>
+                <ul class="header-bottom-menu">
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Компания</a></li>
+                    <li><a href="">Компания</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Спецпредложения</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Спецпредложения</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Контакты</a></li>
                 </ul>
             </nav>
     </header>
@@ -72,206 +78,238 @@
 
     <main>
         
-        <div>
-            <ul> <!--Удали потом див!-->
+        <div class="bread-crum"> 
+            <ul> 
                 <li><a href="index.html">Homepage</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Инструменты</a></li>
-                <li><a href="#">Перфораторы</a></li>
+                <li><a href="">Инструменты</a></li>
+                <li><a href="">Перфораторы</a></li>
             </ul>
-        </div> <!--Напоминлка, чтобы не потерять "хлебные крошки", потом удалю-->
+        </div> 
+
         
+        <section class="store-counter">
         <h1>Перфораторы</h1>
 
 
-        <div class="upper-menu">
-            <p>Фильтр:</p>
+        <div class="upper-price-menu">
 
-            <ul><!--НАПОМИНАНИЕ! Проверь ссылки! Я поставил для интерактивности, могу убрать-->
-                <li><a href="#">Сортировка:</a></li>
-                <li><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По функционалу</a></li>
+            <ul class="price-spec">
+                <li><a href="">Сортировка:</a></li>
+                <li><a href="">По цене</a></li>
+                <li><a href="">По типу</a></li>
+                <li><a href="">По функционалу</a></li>
             </ul>
 
-            <ul><!--НАПОМИНАНИЕ! Проверь ссылки! -->
-                <li>
-                    <a href="#"><!--Еще эксперименты с svg-->
-                    <svg
-                    width="11px"
-                    height="10px"><!--Поставил ссылку временно, чтобы кнопка ощущалась-->
-                    <img src="img/main/icon-up-catal-main.svg" width="11px" height="10px">
-            </svg></a>
-                </li>
-
-                <li><!--НАПОМИНАНИЕ! Поменять стрелочку на дефолтную-->
-                    <a href="#"><svg
-                    width="11px"
-                    height="10px">
-                    <img src="img/main/icon-down-catal-main.svg" width="11px" height="10px">
-            </svg></a>
-                </li>
+            <ul class="catalag-arrows">
+                <li><a href="">стрелочка</a></li>
+                <li><a href="">стрелочка</a></li>
             </ul>
 
         </div>
 
-        <aside>
+        <form class="catalog-price-form">
+            <p>Фильтр:</p>
+
+
+            <h2>Цена</h2>
+
+            <div>
+                Ползунок цены
+
+            <input type="number" placeholder="0" name="left-price" id="left-price" min="0" max="50000">
+            <input type="number" placeholder="0" name="right-price" id="right-price" min="0" max="50000">
+            </div>
+
+
+
             <h2>Производители:</h2>
-
-
-            <label for="price-range">Цена:</label>
-            <input type="range" min="0" max="5000" step="500" id="price-range">
-
-
-            <output name="minsum" for="price-range">
-            0
-            </output> <!--Не уверен здесь с выбором output (может просто <р>), наверно тут еще должна быть магия JS или еще что-то-->
-
-          
-
 
             <ul>
                 <li>
-                    <input type="checkbox" name="bosch-cb" value="bosch-cb" id="bosch-cb" checked>
-                    <label for="bosch-cb">Bosch</label>
+                    <label>
+                    <input type="checkbox" name="bosch-cb" value="bosch-cb">
+                    Bosch</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" name="interskol-cb" value="interskol-cb" id="interskol-cb">
-                    <label for="interskol-cb">Интерскол</label>
+                    <label>
+                    <input type="checkbox" name="interskol-cb" value="interskol-cb">
+                    Интерскол</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" name="makita-cb" value="makita-cb" id="makita-cb" checked>
-                    <label for="makita-cb">Makita</label>
+                    <label>
+                    <input type="checkbox" name="makita-cb" value="makita-cb">
+                    Makita</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" name="dewalt-cb" value="dewalt-cb" id="dewalt-cb">
-                    <label for="dewalt-cb">Dewalt</label>
+                    <label>
+                    <input type="checkbox" name="dewalt-cb" value="dewalt-cb">
+                    Dewalt</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" name="hitachi-cb" value="hitachi-cb" id="hitachi-cb">
-                    <label for="hitachi-cb">Hitachi</label>
+                    <label>
+                    <input type="checkbox" name="hitachi-cb" value="hitachi-cb">
+                    Hitachi</label>
                 </li>
             </ul>
             
 
-            <h3>Питание:</h3>
+            <h2>Питание:</h2>
             <ul>
                 <li>
-                    <input type="radio" name="accomul-rd" value="accomul-rd" id="accomul-rd" checked>
-                    <label for="accomul-rd">Аккумуляторные</label>
+                    <label>
+                    <input type="radio" name="accomul-rd" value="accomul-rd">
+                    Аккумуляторные</label>
                 </li>
 
                 <li>
-                    <input type="radio" name="setev-rd" value="setev-rd" id="setev-rd">
-                    <label for="setev-rd">Сетевые</label>
+                    <label>
+                    <input type="radio" name="setev-rd" value="setev-rd">
+                    Сетевые</label>
                 </li>
             </ul>
-            <input type="button" name="show-goods" value="Показать"> 
-        </aside>
+            <button type="submit">Показать</button>
+        </form>
 
         <section class="market-goods">
-            <h2 style="visibility: hidden">Каталог перфораторов BOSCH</h2><!--Подумал оставить секцию, так как страница без нее выглядит странно + добавил оглавление-->
+            <h2>Каталог перфораторов BOSCH</h2>
             <ul>
-                <li> 
-                    <img src="img/main/Perforator-3000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 3000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 3000</h3>
-                    <p>22500 Р.</p>  <!--Решил сделать через p и срезал лишний код-->
-                    <p>15500 Р.</p> 
-                    <!--Сделал два <p>, чтобы можно было сделать для нее фон. Как я понял, под второй ценой не кнопка, а фон
-                        Это оптимальное решение?-->
+                <li>
+                    <a href="">
+                    <img src="img/main/Perforator-3000-main.jpg" alt="Цены на перфораторы BOSCH
+                    в Техномарте" height="170" width="218">
+                    </a>
+
+                    <a href=""><h3>Перфоратор BOSCH BFG 3000</h3></a>
+                    <p class="price">22500 Р.</p>  
+                    <p class="sale">15500 Р.</p> 
+                
                     
                 </li>
 
 
                 <li>
-                    <img src="img/main/Perforator-6000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 6000" height="170" width="218">
+                    <a href=""><img src="img/main/Perforator-6000-main.jpg" alt="Купить перфоратор BOSCH
+                    BFG 6000 недорого через интернет" height="170" width="218">
+                    </a>
+                    
+                    <ahref=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                    <p class="price">30500 Р.</P>
+                    <p class="sale">25500 Р.</p>
+                </li>
+
+
+                <li>
+                    <!--<a href=""><img src="img/main/Perforator-2000-main.jpg" alt="Цены на перфораторы BOSCH
+                    в Техномарте" height="170" width="218">
+                    </a>
+
                     <h3>Перфоратор BOSCH BFG 6000</h3>
-                    <p>30500 Р.</P>
-                    <p>25500 Р.</p>
-                </li>
+                    <p class="price">12500 Р.</p>-->
 
-
-                <li>
-                    <img src="img/main/Perforator-2000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 2000" height="170" width="218">
+                    <p><a href="">Купить</a></p>
+                    <p><a href="">В закладки</a></p>
+                    
                     <h3>Перфоратор BOSCH BFG 6000</h3>
-                    <p>12500 Р.</p>
+                    <p class="price">12500 Р.</p>
+
                 </li>
 
 
                 <li>
-                    <img src="img/main/Perforator-3000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 3000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000 </h3>
-                    <p>22500 Р.</p>
-                    <p>15500 Р.</p>
+                    <a href=""><img src="img/main/Perforator-3000-main.jpg" alt="Купить перфоратор BOSCH
+                    BFG 3000 недорого через интернет" height="170" width="218">
+                    </a>
+
+                    <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                    <p class="price">22500 Р.</p>
+                    <p class="sale">15500 Р.</p>
                 </li>
 
 
                 <li>
-                    <img src="img/main/Perforator-6000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 6000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000</h3>
-                    <p>30500 Р.</p>
-                    <p>25500 Р.</p>
+                    <a href=""><img src="img/main/Perforator-6000-main.jpg" alt="Цены на перфораторы BOSCH
+                    в Техномарте" height="170" width="218">
+                    </a>
+
+                    <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                    <p class="price">30500 Р.</p>
+                    <p class="sale">25500 Р.</p>
                 </li>
 
 
                 <li>
-                    <img src="img/main/Perforator-2000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 2000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000</h3>
-                    <p>12500 Р.</p>
+                    <a href=""><img src="img/main/Perforator-2000-main.jpg" alt="Купить перфоратор BOSCH
+                    BFG 2000 недорого через интернет" height="170" width="218">
+                    </a>
+                    
+                    <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                    <p class="price">12500 Р.</p>
                 </li>
 
 
                 <li>
-                    <img src="img/main/Perforator-3000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 3000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000 </h3>
-                    <p>22500 Р.</p>
-                    <p>15500 Р.</p>
+                    <a href=""><img src="img/main/Perforator-3000-main.jpg" alt="Цены на перфораторы BOSCH
+                    в Техномарте" height="170" width="218">
+                    </a>
+
+                    <a href=""><h3>Перфоратор BOSCH BFG 6000 </h3></a>
+                    <p class="price">22500 Р.</p>
+                    <p class="sale">15500 Р.</p>
+                </li> 
+
+
+                <li>
+                    <a href=""><img src="img/main/Perforator-6000-main.jpg" alt="Самые крутые супер-пупер 
+                    перфораторы BOSCH" height="170" width="218">
+                    </a>
+
+                     <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                    <p class="price">30500 Р.</p>
+                    <p class="sale">25500 Р.</p>
                 </li>
 
 
                 <li>
-                    <img src="img/main/Perforator-6000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 6000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000</h3>
-                    <p>30500 Р.</p>
-                    <p>25500 Р.</p>
-                </li>
+                    <a href=""><img src="img/main/Perforator-2000-main.jpg" alt="Купить перфоратор BOSCH
+                    BFG 2000 недорого через интернет" height="170" width="218">
+                    </a>
 
-
-                <li>
-                    <img src="img/main/Perforator-2000-main.jpg" alt="Перфоратор BOSCH
-                    BFG 2000" height="170" width="218">
-                    <h3>Перфоратор BOSCH BFG 6000</h3>
-                    <p>12500 Р.</p>
+                     <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                    <p class="price">12500 Р.</p>
                 </li>
             </ul>
         </section>
 
 
+        <div class="u-buy-it">
+            <p>Товары добавлены в корзину</p>
+
+            <ul class="u-buy-menu">
+                <li><a href="">Оформить заказ</a></li>
+                <li><a href="">Продолжить покупку</a></li>
+            </ul>
 
 
-        <article class="perfo-info">
+        </div>
+    </section>
+
+
+
+        <section class="perfo-info">
             <h2>Пара слов о перфораторах</h2>
             
-            <p style="width: 1100px;">Перфоратор — универсальный строительный инструмент. 
+            <p>Перфоратор — универсальный строительный инструмент. 
                 Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-                <br>
                 Существуют электромеханические и пневматические перфораторы. 
                 Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
                 В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
             </p> 
-        </article>
+        </section>
 
 
     </main>
@@ -281,48 +319,48 @@
         <nav>
 
             <a href="index.html">
-                <img src="img/" alt="Техномарт - Интернет-магазин строительных материалов" width="220px" height="68px">
+                <img src="img/" alt="Техномарт - Интернет-магазин строительных материалов" width="220" height="68">
             </a>
 
 
-            <ul>
-                <li><a href="#">Компания</a></li>
-                <li><a href="#">Новости</a></li>
+            <ul class="footer-nav">
+                <li><a href="">Компания</a></li>
+                <li><a href="">Новости</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Контакты</a></li>
             </ul>
 
 
 
-            <p style="width: 319px;">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                +7 (812) 555-05-55
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
 
-            <ul>
-                <li><a href="#">Материалы</a></li>
-                <li><a href="#">Техника</a></li>
-                <li><a href="#">Инструмент</a></li>
-                <li><a href="#">Спецпредложения</a></li>
+            <ul class="footer-nav-two">
+                <li><a href="">Материалы</a></li>
+                <li><a href="">Техника</a></li>
+                <li><a href="">Инструмент</a></li>
+                <li><a href="">Спецпредложения</a></li>
             </ul>
         </nav>  
 
 
 
-        <div class="butt-footer"> 
-            <p style="width: 253px;">
+        <div class="footer-bottom"> 
+            <p>
                 © 2010–2017 Компания «Техномарт»
                 Все права защищены
             </p>
 
-            <ul>
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+            <ul class="footer-socnet">
+                <li><a href="">Вконтакте</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
             </ul>
 
 
-            <div style="width: 210px;">
+            <div class="footer-contacts">
                 <p>Обратная связь:
                     <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
                 <p>Разработано —

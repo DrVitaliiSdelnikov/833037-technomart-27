@@ -47,8 +47,9 @@ main {
     display: block; 
     width: 220px; 
     height: 42px;
-    background-color: #ee3643;
-    box-shadow: 0px 5px 0 #B6242f;
+    /*background-color: #ee3643;
+    box-shadow: 0px 5px 0 #B6242f;*/
+    background: #ee3643 url(../img/header/back-header-logo.png) no-repeat;
     margin: 0px 0px 0px 130px;
 
 }
@@ -83,16 +84,9 @@ main {
 
 
 
-.header-top-search svg {
-    margin: 12px 15px 13px 17px;
-    fill: #6A7281;
-}
-
-
-
 
 .header-top-search:nth-of-type(1) input {
-    width: 270px;
+    width: 240px;
     height: 42px;
     background: #293449;
     border: #293449 solid 2px;
@@ -121,7 +115,7 @@ main {
 }
 
 
-.header-top-search input:last-child {
+.header-top-search input:last-of-type {
     visibility: hidden;
     width: 1px;
     padding: 0px;
@@ -132,7 +126,7 @@ main {
 .header-top-tobuy {
     list-style-type: none;
     display: flex;
-    margin: 0px 90px 0px 17px;
+    margin: 0px 130px 0px 17px;
     width: 450px; 
     justify-content: space-between;
     align-items: center;
@@ -145,14 +139,6 @@ main {
 }
 
 
-.bookmark svg {
-    margin: 12px 13px 14px 17px;
-}
-
-
-.cart svg {
-    margin: 12px 17px 15px 18px; 
-}
 
 .order {
     background: #63a63e;
@@ -291,12 +277,7 @@ main {
     
 }
 
-.header-mid-login svg {
-    display: block;
-    width: 20px;
-    height: 17px;
-    margin: 14px 12px 14px 0px;
-}
+
 
 .header-mid-login a:hover {
     color: #ee3643;
@@ -378,12 +359,12 @@ main {
     flex-wrap: wrap;
     margin: 59px 130px 53px 130px;
     padding: 0px;
+    font-family: Cuprum; 
+    justify-content: center;
 
 }
 
-.whole-slider li {
-    
-}
+
 
 .whole-slider a {
     display: block;
@@ -400,14 +381,14 @@ main {
 
 .whole-slider p {
     display: block;
-    width: 111px;
+    width: 118px;
     height: 22px;
     font-family: Cuprum;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.25;
     text-align: left;
-    margin: 26px 166px 15px 23px;
+    margin: 26px 160px 15px 23px;
     color: white;
 }
 
@@ -415,8 +396,9 @@ main {
     width: 300px;
     height: 123px;
     margin-left: 130px;
-    background: #ffbf47;
+    background: #ffbf47; 
     margin: 10px;
+    position: relative;
     
 }
 
@@ -424,6 +406,12 @@ main {
     background: #E6AD3E;
 }
 
+
+.slider-firts-wind img {
+    position: absolute;
+    bottom: 52%;
+    left: 80%;
+}
 
 .slider-second-wind {
     width: 300px;
@@ -459,13 +447,18 @@ main {
     margin: 10px;
 }
 
+.slider ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
 
 .slider-fourth-wind {
     width: 300px;
     height: 123px;
     background: #8ed78f;
     margin: 10px;
-    
+    border: 1px solid transparent;
 
 }
 
@@ -475,12 +468,12 @@ main {
 }
 
 
-
 .slider-fifth-wind {
     width: 300px;
     height: 123px;
     background: #ffbf47;
-    margin: 10px;
+    margin: 15px 10px 10px 10px;
+    border: 1px solid transparent;
 
 }
 
@@ -488,6 +481,10 @@ main {
     background: #E6AD3E;
 }
 
+.slider-double ul {
+    list-style-type: none;
+    padding: 0px;
+}
 
 .main-pop-goods {
 
@@ -551,15 +548,7 @@ main {
 }
 
 
-.pop-map {
-    visibility: hidden;
 
-}
-
-
-.pop-form {
-
-}
 
 
 
@@ -586,6 +575,21 @@ main {
 
 }
 
+.catal-prices {
+
+}
+
+.snake {
+    display: block; 
+    width: 220px;
+    height: 80px;
+    border-radius: 5px; 
+    background: 
+    url(../img/main/price-snake-circ.png) no-repeat 90% 50%,
+    url(../img/main/price-snake-circ.png) no-repeat 10% 50%,
+    url(../img/main/price-snake-green.png) no-repeat 50% 50%,
+    #f7f3ec url(../img/main/price-snake-gray.png) no-repeat 50% 50%;
+}
 
 
 .market-goods {
@@ -600,7 +604,25 @@ main {
     visibility: hidden;
 }
 
-.u-buy-it {
+.example-card {
+    display: block;
+    width: 220px;
+    height: 318px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    margin: 20px;
+    position: relative; 
+}
+
+.example-card img {
+    position: absolute;
+    top: -0.3%;
+    left: 73%;
+
+}
+
+
+.u-buy-it-pop {
     visibility: hidden;
 }
 
@@ -639,8 +661,9 @@ main {
     display: block; 
     width: 220px; 
     height: 63px;
-    background-color: #ee3643;
-    box-shadow: 0px 5px 0 #B6242f;
+    /*background-color: #ee3643;
+    box-shadow: 0px 5px 0 #B6242f;*/
+    background: #ee3643 url(../img/footer/back-footer-logo.png) no-repeat;
     margin: 0px 0px 0px 130px;
 
 }
@@ -796,17 +819,6 @@ main {
     margin: 0px 3px 0px 3px;
 }
 
-.vk svg {
-    margin: 13px 8px 14px 8px;
-}
-
-.fb svg {
-    margin: 10px 15px 10px 15px;
-}
-
-.inst svg {
-    margin: 10px;
-}
 
 
 .footer-socnet li:hover {
@@ -873,5 +885,17 @@ main {
 .url a:focus {
     color: #ee3643;
     text-decoration: none;
+
+}
+
+
+.pop-map {
+    visibility: hidden;
+
+}
+
+
+.pop-form {
+    visibility: hidden;
 
 }

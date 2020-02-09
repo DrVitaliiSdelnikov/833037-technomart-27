@@ -78,19 +78,20 @@
 
     <main>
         
-        <div class="bread-crum"> 
-            <ul> 
+         
+            <ul class="bread-crum"> 
                 <li><a href="index.html">Homepage</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="">Инструменты</a></li>
                 <li><a href="">Перфораторы</a></li>
             </ul>
-        </div> 
+    
 
-        
-        <section class="store-counter">
         <h1>Перфораторы</h1>
 
+        
+        
+        
 
         <div class="upper-price-menu">
 
@@ -112,7 +113,8 @@
             <p>Фильтр:</p>
 
 
-            <h2>Цена</h2>
+            <fieldset class="catal-prices">
+            <legend>Цена</legend>
 
             <div>
                 Ползунок цены
@@ -120,10 +122,12 @@
             <input type="number" placeholder="0" name="left-price" id="left-price" min="0" max="50000">
             <input type="number" placeholder="0" name="right-price" id="right-price" min="0" max="50000">
             </div>
+            </fieldset>
 
 
 
-            <h2>Производители:</h2>
+            <fieldset class="catal-producer">
+            <legend>Производители:</legend>
 
             <ul>
                 <li>
@@ -156,9 +160,10 @@
                     Hitachi</label>
                 </li>
             </ul>
-            
+            </fieldset>
 
-            <h2>Питание:</h2>
+            <fieldset>
+            <legend>Питание:</legend>
             <ul>
                 <li>
                     <label>
@@ -172,17 +177,23 @@
                     Сетевые</label>
                 </li>
             </ul>
+            </fieldset>
             <button type="submit">Показать</button>
         </form>
 
         <section class="market-goods">
-            <h2>Каталог перфораторов BOSCH</h2>
+            <h2>Каталог перфораторов BOSCH</h2><!---->
             <ul>
                 <li>
-                    <a href="">
+                    
                     <img src="img/main/Perforator-3000-main.jpg" alt="Цены на перфораторы BOSCH
                     в Техномарте" height="170" width="218">
-                    </a>
+
+                    <div class="buy-menu-hid">
+                        <p><a href="">Купить</a></p>
+                        <p><a href="">В закладки</a></p>
+                    </div>
+                    
 
                     <a href=""><h3>Перфоратор BOSCH BFG 3000</h3></a>
                     <p class="price">22500 Р.</p>  
@@ -193,38 +204,48 @@
 
 
                 <li>
-                    <a href=""><img src="img/main/Perforator-6000-main.jpg" alt="Купить перфоратор BOSCH
+                    <img src="img/main/Perforator-6000-main.jpg" alt="Купить перфоратор BOSCH
                     BFG 6000 недорого через интернет" height="170" width="218">
-                    </a>
                     
-                    <ahref=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                    <div class="buy-menu-hid">
+                        <p><a href="">Купить</a></p>
+                        <p><a href="">В закладки</a></p>
+                    </div>
+
+                    <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                   
+
                     <p class="price">30500 Р.</P>
                     <p class="sale">25500 Р.</p>
                 </li>
 
 
                 <li>
-                    <!--<a href=""><img src="img/main/Perforator-2000-main.jpg" alt="Цены на перфораторы BOSCH
+                    <img src="img/main/Perforator-2000-main.jpg" alt="Цены на перфораторы BOSCH
                     в Техномарте" height="170" width="218">
-                    </a>
 
-                    <h3>Перфоратор BOSCH BFG 6000</h3>
-                    <p class="price">12500 Р.</p>-->
-
+                    <div class="buy-menu-hid">
                     <p><a href="">Купить</a></p>
                     <p><a href="">В закладки</a></p>
-                    
+                    </div>
+
                     <h3>Перфоратор BOSCH BFG 6000</h3>
                     <p class="price">12500 Р.</p>
 
+                
                 </li>
 
 
                 <li>
-                    <a href=""><img src="img/main/Perforator-3000-main.jpg" alt="Купить перфоратор BOSCH
+                   <img src="img/main/Perforator-3000-main.jpg" alt="Купить перфоратор BOSCH
                     BFG 3000 недорого через интернет" height="170" width="218">
-                    </a>
 
+                    <div class="buy-menu-hid">
+                        <p><a href="">Купить</a></p>
+                        <p><a href="">В закладки</a></p>
+                    </div>
+
+                    
                     <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
                     <p class="price">22500 Р.</p>
                     <p class="sale">15500 Р.</p>
@@ -232,9 +253,14 @@
 
 
                 <li>
-                    <a href=""><img src="img/main/Perforator-6000-main.jpg" alt="Цены на перфораторы BOSCH
+                    <img src="img/main/Perforator-6000-main.jpg" alt="Цены на перфораторы BOSCH
                     в Техномарте" height="170" width="218">
-                    </a>
+
+                    <div class="buy-menu-hid">
+                        <p><a href="">Купить</a></p>
+                        <p><a href="">В закладки</a></p>
+                    </div>
+                    
 
                     <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
                     <p class="price">30500 Р.</p>
@@ -243,9 +269,13 @@
 
 
                 <li>
-                    <a href=""><img src="img/main/Perforator-2000-main.jpg" alt="Купить перфоратор BOSCH
+                    <img src="img/main/Perforator-2000-main.jpg" alt="Купить перфоратор BOSCH
                     BFG 2000 недорого через интернет" height="170" width="218">
-                    </a>
+
+                    <div class="buy-menu-hid">
+                        <p><a href="">Купить</a></p>
+                        <p><a href="">В закладки</a></p>
+                    </div>
                     
                     <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
                     <p class="price">12500 Р.</p>
@@ -253,9 +283,13 @@
 
 
                 <li>
-                    <a href=""><img src="img/main/Perforator-3000-main.jpg" alt="Цены на перфораторы BOSCH
+                    <img src="img/main/Perforator-3000-main.jpg" alt="Цены на перфораторы BOSCH
                     в Техномарте" height="170" width="218">
-                    </a>
+
+                    <div class="buy-menu-hid">
+                        <p><a href="">Купить</a></p>
+                        <p><a href="">В закладки</a></p>
+                    </div>
 
                     <a href=""><h3>Перфоратор BOSCH BFG 6000 </h3></a>
                     <p class="price">22500 Р.</p>
@@ -264,9 +298,14 @@
 
 
                 <li>
-                    <a href=""><img src="img/main/Perforator-6000-main.jpg" alt="Самые крутые супер-пупер 
+                    <img src="img/main/Perforator-6000-main.jpg" alt="Самые крутые супер-пупер 
                     перфораторы BOSCH" height="170" width="218">
-                    </a>
+
+                    <div class="buy-menu-hid">
+                        <p><a href="">Купить</a></p>
+                        <p><a href="">В закладки</a></p>
+                    </div>
+                    
 
                      <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
                     <p class="price">30500 Р.</p>
@@ -275,29 +314,34 @@
 
 
                 <li>
-                    <a href=""><img src="img/main/Perforator-2000-main.jpg" alt="Купить перфоратор BOSCH
+                    <img src="img/main/Perforator-2000-main.jpg" alt="Купить перфоратор BOSCH
                     BFG 2000 недорого через интернет" height="170" width="218">
-                    </a>
 
-                     <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                    <div class="buy-menu-hid">
+                        <p><a href="">Купить</a></p>
+                        <p><a href="">В закладки</a></p>
+                    </div>
+                    
+
+                    <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
                     <p class="price">12500 Р.</p>
                 </li>
             </ul>
         </section>
 
 
-        <div class="u-buy-it">
-            <p>Товары добавлены в корзину</p>
-
-            <ul class="u-buy-menu">
-                <li><a href="">Оформить заказ</a></li>
-                <li><a href="">Продолжить покупку</a></li>
-            </ul>
 
 
-        </div>
-    </section>
+    <div class="u-buy-it">
+        <p>Товары добавлены в корзину</p>
 
+        <ul class="u-buy-menu">
+            <li><a href="">Оформить заказ</a></li>
+            <li><a href="">Продолжить покупку</a></li>
+        </ul>
+
+
+    </div>
 
 
         <section class="perfo-info">

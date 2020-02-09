@@ -94,22 +94,32 @@
             <li class="slider-firts-wind">
                 <p>Материалы</p> 
                 <img src="img/main/new-flag-main.png" width="60" height="59" alt="Новый раздел Материалы на сайте Техномарта">
-                <a href="">на любой вкус</a>
+                <a href="">На любой вкус</a>
             </li>
             <li class="slider-second-wind">
                 <p>Инструмент</p>
-                <a href="">НА ВСЕ СЛУЧАИ</a>
+                <a href="">На все случаи</a>
             </li>
             <li class="slider-third-wind">
                 <p>Техника</p>
-                <a href="">для стройки</a>
+                <a href="">Для стройки</a>
             </li>
 
 
             <li class="slider">
                 <ul>
-                    <li><img src="img/main/photo1-slider-main.jpg" alt="Дрели. Соседям на радость" width="620" height="266"></li>
-                    <li></li>
+                    <li class="slide-one">
+                        <img src="img/main/photo1-slider-main.jpg" alt="Дрели. Соседям на радость" width="620" height="266">
+                        <span>Дрели</span>
+                        <p>Соседям на радость</p>
+                        <a href="">Открыть каталог</a>
+                    </li>
+
+                    <li class="slide-two"><img src="img/main/slide-image-main.jpg" alt="Перфораторы. Соседям на радость" width="620" height="266">
+                        <p><span>Перфораторы</span>
+                        Соседям на радость</p>
+                        <a href="">Открыть каталог</a>
+                    </li>
                 </ul>
             </li>
                 
@@ -119,12 +129,12 @@
                 <ul>
                     <li class="slider-fourth-wind">
                         <p>Скидки 50%</p>
-                        <a href="">На 350 ТОВАРОВ</a>
+                        <a href="">На 350 Товаров</a>
                     </li>
 
                     <li class="slider-fifth-wind">
                     <p>Доставка</p>
-                    <a href="">бесплатно</a>
+                    <a href="">Бесплатно</a>
                 </li>
                 </ul>
             </li>
@@ -151,6 +161,11 @@
                 <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
                 <p class="price">32500 Р.</p>
                 <p class="sale">25500 p.</p>
+
+                <ul class="buy-menu-hid">
+                    <li><a href="">Купить</a></li>
+                    <li><a href="">В закладки</a></li>
+                </ul>
             </article>
 
 
@@ -161,6 +176,11 @@
                 <a href=""><h3>Перфоратор BOSCH BFG 3000</h3></a>
                 <p class="price">22500 Р.</p> 
                 <p class="sale">15500 Р.</p> 
+
+                <ul class="buy-menu-hid">
+                    <li><a href="">Купить</a></li>
+                    <li><a href="">В закладки</a></li>
+                </ul>
             </article>
 
 
@@ -171,12 +191,18 @@
                 <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
                 <p class="price">30500 Р.</p>
                 <p class="sale">25500 Р.</p>
+
+                <ul class="buy-menu-hid">
+                    <li><a href="">Купить</a></li>
+                    <li><a href="">В закладки</a></li>
+                </ul>
             </article>
 
 
-            <article>
+            <article class="list-pop-goods-new">
                 <img src="img/main/Perforator-2000-main.jpg" alt="Перфоратор BOSCH
                 BFG 2000" height="170" width="218">
+                <img src="img/main/new-flag-main.png" width="60" height="59" alt="Новый товар. Перфоратор BOSCH BFG 2000">
 
                 <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
                 <p class="price">12500 Р.</p>
@@ -405,35 +431,37 @@
 
         </div>
     </footer>
+
+
+    <div class="pop-map">
+        <img src="img/main/map-main-pop.png" alt="Адресс магазина Техномарт" width="940" height="446.2">
+    
+    </div>
+    
+    
+    <form class="pop-form">
+    
+        <label for="urname">Ваше имя:
+        <input type="text" name="urname" id="urname" placeholder="Имя Фамилия"> 
+        </label>
+            
+            
+        <label for="urmail">Ваш e-mail:
+        <input type="email" name="urmail" id="urmail" placeholder="email@example.com">
+        </label>
+        
+    
+        <label for="urtext" >Текст письма:
+        <textarea placeholder="В свободной форме" name="urtext" id="urtext" cols="60" rows="20">
+        </textarea>
+        </label>
+    
+        
+        <button type="submit">Отправить</button>
+    </form>
 </body>
 </html>
 
 
 
 
-<div class="pop-map">
-    <img src="img/main/map-main-pop.png" alt="Адресс магазина Техномарт" width="940" height="446.2">
-
-</div>
-
-
-<form class="pop-form">
-
-    <label for="urname">Ваше имя:
-    <input type="text" name="urname" id="urname" placeholder="Имя Фамилия"> 
-    </label>
-        
-        
-    <label for="urmail">Ваш e-mail:
-    <input type="email" name="urmail" id="urmail" placeholder="email@example.com">
-    </label>
-    
-
-    <label for="urtext" >Текст письма:
-    <textarea placeholder="В свободной форме" name="urtext" id="urtext" cols="60" rows="20">
-    </textarea>
-    </label>
-
-    
-    <button type="submit">Отправить</button>
-</form>

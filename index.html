@@ -10,7 +10,7 @@
 
 
     <header>
-        <nav class="page-header">
+        <nav class="page-navigation">
 
 
         <div class="page-header-top">
@@ -58,9 +58,9 @@
 
 
         <div class="page-header-for-user">
-            <p class="page-header-info"> 
-                Интернет-магазин строительных материалов<br>
-                и инструментов для ремонта
+            <p class="page-header-info">Интернет-магазин 
+строительных материалов
+и инструментов для ремонта
             </p>
 
 
@@ -91,7 +91,7 @@
 
 
 
-            <ul class="page-header-navigation">
+            <ul class="site-navigation">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="">Компания</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
@@ -108,17 +108,17 @@
     <main>
 
 
-        <ul class="menu-n-slider">
-            <li class="menu-n-slider-materials">
+        <ul class="menu-slider">
+            <li class="menu-slider-materials">
                 <p>Материалы</p> 
                 <img src="img/main/new-flag-main.png" width="60" height="59" alt="Новый раздел Материалы на сайте Техномарта">
                 <a href="">на любой вкус</a>
             </li>
-            <li class="menu-n-slider-tools">
+            <li class="menu-slider-tools">
                 <p>Инструмент</p>
                 <a href="">НА ВСЕ СЛУЧАИ</a>
             </li>
-            <li class="menu-n-slider-equipment">
+            <li class="menu-slider-equipment">
                 <p>Техника</p>
                 <a href="">для стройки</a>
             </li>
@@ -143,14 +143,14 @@
                 
 
 
-            <li class="menu-n-slider-rest">
+            <li class="menu-slider-rest">
                 <ul>
-                    <li class="menu-n-slider-sale">
+                    <li class="menu-slider-sale">
                         <p>Скидки 50%</p>
                         <a href="">На 350 ТОВАРОВ</a>
                     </li>
 
-                    <li class="menu-n-slider-delivery">
+                    <li class="menu-slider-delivery">
                     <p>Доставка</p>
                     <a href="">бесплатно</a>
                 </li>
@@ -163,7 +163,7 @@
 
 
 
-        <section class="popular-goods">
+        <section class="popular">
             <header>
 
                 <h2>Популярные товары:</h2>
@@ -171,13 +171,13 @@
 
             </header>
 
-            <div class="popular-goods-list">
+            <div class="popular-list">
             <article>
                 <img src="img/main/Perforator-9000-main.jpg" alt="Перфоратор BOSCH
                 BFG 9000" height="170" width="218">
                 
 
-                <a href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
+                <a href=""><h3>Перфоратор BOSCH BFG 9000</h3></a>
                 <p class="normal-price">32500 Р.</p>
                 <p class="sale-price">25500 p.</p>
             </article>
@@ -216,7 +216,7 @@
         </section>
 
 
-        <section class="main-producers-list">
+        <section class="producers">
 
             <header>
                 <h2>Популярные производители:</h2>
@@ -271,7 +271,7 @@
 
 
 
-        <section class="main-services-list">
+        <section class="services">
             <h2>Сервисы</h2>
 
             <p>
@@ -322,7 +322,7 @@
 
 
 
-        <div class="about-us-n-contacts">
+        <div class="about-us-contacts">
             <section class="about-us">
                 <h2>Компания «Техномарт»</h2>
 
@@ -370,7 +370,7 @@
     <footer class="page-footer">
         <nav class="page-footer-navigation">
 
-            <div class="page-footer-menu-n-logo">
+            <div class="page-footer-menu-logo">
 
             <a href="index.html" class="page-footer-logo">
                 <img src="img/header/logo.png" alt="Техномарт - Интернет-магазин строительных материалов" 
@@ -378,7 +378,7 @@
             </a>
 
 
-            <ul class="footer-menu">
+            <ul class="footer-site-nav">
                 <li><a href="">Компания</a></li>
                 <li><a href="">Новости</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
@@ -388,7 +388,7 @@
 
             </div>
 
-            <div class="page-footer-info-n-offers">
+            <div class="page-footer-info-offers">
 
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                 +7 (812) 555-05-55
@@ -406,13 +406,13 @@
 
 
 
-        <div class="page-footer-social-n-feedback"> 
+        <div class="page-footer-social-feedback"> 
             <p>
                 © 2010–2017 Компания «Техномарт»
                 Все права защищены
             </p>
 
-            <ul class="socialnet-list">
+            <ul class="social-list">
                 <li class="social-button">
                 <a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
@@ -457,19 +457,22 @@
     </div>
     
     
-    <form class="popup-form">
+    <form class="popup-feedback">
     
-        <label for="urname">Ваше имя:
+        <label for="urname" class="feedback-name">
+        Ваше имя:
         <input type="text" name="urname" id="urname" placeholder="Имя Фамилия"> 
         </label>
             
             
-        <label for="urmail">Ваш e-mail:
+        <label for="urmail" class="feedback-email">
+        Ваш e-mail:
         <input type="email" name="urmail" id="urmail" placeholder="email@example.com">
         </label>
         
     
-        <label for="urtext" >Текст письма:
+        <label for="urtext" class="textarea-feddback">
+        Текст письма:
         <textarea placeholder="В свободной форме" name="urtext" id="urtext" cols="60" rows="20">
         </textarea>
         </label>

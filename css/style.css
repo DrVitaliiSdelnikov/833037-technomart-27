@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic');
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic');
@@ -1536,12 +1535,24 @@ img {
     height: 80px;
     border-radius: 5px; 
     background: 
-    url(../img/main/price-snake-circ.png) no-repeat 90% 50%,
-    url(../img/main/price-snake-circ.png) no-repeat 10% 50%,
     url(../img/main/price-snake-green.png) no-repeat 50% 50%,
     #f7f3ec url(../img/main/price-snake-gray.png) no-repeat 50% 50%;
     margin-bottom: 10px;
+    position: relative;
 
+}
+
+.price-slider a:first-child {
+    position: absolute;
+    top: 35%;
+    right: 85%;
+
+}
+
+.price-slider a:last-child {
+    position: absolute;
+    top: 35%;
+    right: 13%;
 }
 
 .catalog-form-slider label {
@@ -1565,7 +1576,7 @@ img {
 }
 
 
-.catalog-price-slider legend {
+.catalog-form-slider legend {
     font-size: 17px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;

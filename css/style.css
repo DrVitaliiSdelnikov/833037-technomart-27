@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic');
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic');
@@ -13,6 +14,12 @@ body {
 main {
     //background: #ffffff;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 
@@ -96,24 +103,17 @@ main {
 
 
 .search-field > label :first-child {
-    margin: 12px 15px 13px 17px;
-    fill: #ffffff; 
-    opacity: 0.3;
-    display: flex;
-}
-
-
-.search-field > label :nth-child(2) {
-    width: 195px;
+    min-width: 195px;
     height: 42px;
     background: #293449;
     border: #293449 solid 2px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     color: #ffffff;
-    
-    
 }
+
+
+
 
 
 
@@ -170,7 +170,7 @@ main {
     list-style-type: none;
     display: flex;
     margin: 0px 130px 0px 17px;
-    width: 450px; 
+    min-width: 450px; 
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
@@ -178,6 +178,7 @@ main {
     font-size: 17px;
     color: #ffffff;
     padding: 0px;
+    flex-wrap: wrap;
     
 }
 
@@ -205,7 +206,7 @@ main {
     text-decoration: none;
     color: #ffffff;
     display: flex;
-    height: 42px;
+    min-height: 42px;
     align-items: center;
     
 }
@@ -329,12 +330,9 @@ main {
     text-align: left;
     align-items: center;
 
-    
 }
 
-.page-header-contacts svg {
-    margin: 13px 40px 13px 15px;
-}
+
 
 .page-header-login  {
     display: flex;
@@ -487,7 +485,7 @@ main {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
-    margin: 50px 120px 37px 120px;
+    margin: 50px 120px 50px 120px;
     padding: 0px;
     font-family: "Cuprum", Arial, sans-serif;
     min-width: 963px;
@@ -507,7 +505,7 @@ main {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 38px;
-    margin: 15px 0 auto 22px;
+    margin: 15px 0 22px 22px;
     text-decoration: none;
 }
 
@@ -561,11 +559,20 @@ main {
     min-height: 123px;
     background: #3bbce3 url(../img/svg/icon-2.svg) no-repeat 88% 55%;
     margin: 10px 10px 20px 10px;
+    position: relative;
+    
     
 }
 
 .menu-slider-tools a {
     background: #32AACD;
+}
+
+.menu-slider-tools img {
+    position: absolute;
+    bottom: 53%;
+    left: 80%;
+    display: none;
 }
 
 .menu-slider-tools a:hover {
@@ -594,6 +601,13 @@ main {
     background: #C783C3;
 }
 
+.menu-slider-equipment img {
+    position: absolute;
+    bottom: 53%;
+    left: 80%;
+    display: none;
+}
+
 .menu-slider-equipment a:hover {
     background-color: rgba(0,0,0,0.2);
 
@@ -620,46 +634,24 @@ main {
     padding: 0px;
 }
 
-.slider input[type="radio"] {
-    display: none;
-}
-  
-.slider-inner {
-    overflow: hidden;
-}
-  
-.slider-slides {
-    width: 300%;
-    transition: transform 0.8s ease;
-}
-  
-.slider-slides img {
-    float: left;
-    width: 620px;
-    height: 266px;
-}
-  
-.slider-controls {
+.slider-buttons {
+    display: flex;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 80%;
     right: 50%;
-  
+    
 }
-  
-.slider-controls label {
-    display: inline-block;
-    margin: 0 3px;
-    width: 5px;
-    height: 5px;
-    border: 3px solid white;
-    border-radius: 50%;
-    background-color: #cccccc;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    transition: background-color 0.2s;
+
+
+.slider-buttons input[type="radio"] {
+    margin-right: 5px;
+    
 }
-  
+
+
+
+
   
 .slide-1 {
     position: relative; 
@@ -724,6 +716,7 @@ main {
   
 .slide-2 {
     position: relative;
+    display: none;
 
 }
   
@@ -735,8 +728,8 @@ main {
     text-transform: uppercase;
     position: absolute;
     color: #ffffff;
-    top: 22px;
-    left: 642px;
+    top: 20px;
+    right: 390px;
 }
   
 .slide-2 p {
@@ -750,7 +743,7 @@ main {
     line-height: 1.33;
     font-weight: normal;
     margin: 20px 0px 0px 25px; 
-    left: 620px;
+    left: 0px;
   
 }
   
@@ -769,7 +762,7 @@ main {
     text-decoration: none;
     color: #fff;
     line-height: 38px;
-    left: 625px;
+    left: 0px;
   
 }
   
@@ -785,21 +778,6 @@ main {
 }
   
   
-  
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"] {
-    background-color: #ee3643;
-}
-  
-#btn-1:checked ~ .slider-inner .slider-slides {
-    transform: translate(0); 
-    
-}
-  
-#btn-2:checked ~ .slider-inner .slider-slides {
-    transform: translate(-620px); 
-    
-}
 
 
 
@@ -816,6 +794,13 @@ main {
 
 .menu-slider-sale a {
     background: #81C281;
+}
+
+.menu-slider-sale img {
+    position: absolute;
+    bottom: 53%;
+    left: 80%;
+    display: none;
 }
 
 .menu-slider-sale a:hover {
@@ -840,6 +825,13 @@ main {
 
 .menu-slider-delivery a {
     background: #E6AD3E;
+}
+
+.menu-slider-delivery img {
+    position: absolute;
+    bottom: 53%;
+    left: 80%;
+    display: none;
 }
 
 .menu-slider-delivery a:hover {
@@ -871,10 +863,11 @@ main {
     min-width: 940px;
     justify-content: center;
     align-items: center;
-    height: 89px;
+    min-height: 89px;
+    flex-wrap: wrap;
 }
 
-.popular header :first-child {
+.popular h2 {
     display: block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
@@ -931,9 +924,11 @@ main {
     min-width: 940px;
     justify-content: space-between;
     margin: 0px 130px 21px 130px;
-
+    
     
 }
+
+
 
 .popular-list article:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -971,10 +966,19 @@ main {
 
 .popular-list article {
     width: 218px;
-    height: 318px;
+    min-height: 318px;
     position: relative;
     background: #ffffff;
     border: solid 1px #eaeaea;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.popular-list .new-product {
+    position: absolute;
+    left: 72.6%;
+    display: none;
 }
 
 
@@ -1007,7 +1011,7 @@ main {
     color: #ffffff;
     min-width: 141px;
     min-height: 38px;
-    margin: 0 21px 36px 29px;
+    margin: 0 21px 22px 29px;
     text-align: center;
     
 
@@ -1047,7 +1051,6 @@ main {
 }
 
 .popular-goods-list-new :nth-child(2) {
-    position: absolute; 
     position: absolute;
     left: 72.6%;
 
@@ -1072,11 +1075,12 @@ main {
     min-width: 940px;
     justify-content: center;
     align-items: center;
-    height: 89px;
+    min-height: 89px;
+    flex-wrap: wrap;
 }
 
 
-.producers header :first-child {
+.producers h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     font-weight: normal;
@@ -1129,7 +1133,7 @@ main {
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 130px 85px 130px;
+    margin: 20px 130px 70px 130px;
     min-width: 940px;
     padding: 0px;
 }
@@ -1477,13 +1481,13 @@ main {
     display: flex;
 }
 
-.catalog-price {
+.catalog-form {
     margin: 20px 0px 0px 130px;
     min-width: 225px;
 
 }
 
-.catalog-price fieldset {
+.catalog-form fieldset {
     border:0 none;
     padding: 0px;
     margin: 0px;
@@ -1492,7 +1496,7 @@ main {
 
 
 
-.catalog-price button{
+.catalog-form button{
     width: 140px;
     height: 38px;
     font-size: 13px;
@@ -1509,7 +1513,7 @@ main {
 }
 
 
-.catalog-price > div {
+.catalog-form > div {
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: normal;
@@ -1540,7 +1544,7 @@ main {
 
 }
 
-.catalog-price-slider label {
+.catalog-form-slider label {
     margin: 10px 0px 10px 10px;
 }
 
@@ -1700,8 +1704,15 @@ main {
     flex-wrap: wrap;
     padding: 0px;
     margin: 10px 115px 0px 10px;
+    position: relative;
 }
 
+.product-card .new-product {
+    position: absolute;
+    left: 72.6%;
+    display: none;
+
+}
 
 
 .product-card:hover {
@@ -1868,6 +1879,7 @@ main {
     list-style: none;
     justify-content: flex-end;
     margin: 0px;
+    flex-wrap: wrap;
 
 }
 
@@ -1886,7 +1898,7 @@ main {
 .product-card {
     display: block;
     width: 218px;
-    height: 318px;
+    min-height: 318px;
     background: #ffffff;
     border: 1px solid #e5e5e5;
     margin: 10px;
@@ -1911,18 +1923,25 @@ main {
     text-decoration: none;
 }
 
-.product-card:hover {
-
-}
 
 
 
 
 .product-back-side {
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
-    padding: 0px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+.product-back-side li {
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .product-back-side a {
@@ -1931,16 +1950,43 @@ main {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.29;
+    line-height: 38px;
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+    text-transform: uppercase;
 }
+
+.product-back-side .buy {
+    display: block;
+    width: 135px;
+    height: 38px;
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background: #63a63e;
+}
+
+
+.product-back-side .choose {
+    display: block;
+    width: 135px;
+    height: 38px;
+    border: solid 3px #63a63e;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+.product-card:hover .product-back-side {
+    display: block;
+}
+
+
+
 
 .product-card-new {
     display: block;
     width: 218px;
-    height: 318px;
+    min-height: 318px;
     background: #ffffff;
     border: 1px solid #e5e5e5;
     margin: 10px;
@@ -2068,7 +2114,7 @@ main {
 }
 
 .product-in-cart {
-    visibility: hidden;
+    display: none;
 
 }
 
@@ -2141,6 +2187,7 @@ main {
     color: #f1f5f7;
     padding: 0px; 
     flex-grow: 1;
+    flex-wrap: wrap;
     
 
 
@@ -2200,6 +2247,7 @@ main {
     flex-grow: 1;
     padding: 0px;
     list-style: none;
+    flex-wrap: wrap;
     
 }
 
@@ -2238,6 +2286,7 @@ main {
     min-width: 1200px;
     justify-content: space-between;
     font-family: "Cuprum", Arial, sans-serif;
+    flex-wrap: wrap;
 
 }
 
@@ -2293,10 +2342,7 @@ main {
     background: #ee3643;
 }
 
-/*.social-button:focus path {
-    fill: #000000;
-}*/
-
+/*
 .social-list :first-child svg {
     margin: 13px 8px 14px 8px;
 }
@@ -2308,6 +2354,8 @@ main {
 .social-list :nth-child(3) svg {
     margin: 10px 11px 11px 10px;
 }
+*/
+
 
  
 
@@ -2367,18 +2415,16 @@ main {
 
 
 .popup-map {
-    visibility: hidden;
+    display: none;
 
 }
 
 
 .popup-feedback {
-    visibility: hidden;
+    display: none;
     width: 620px;
     height: 430px;
     background: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
 
 }
 

@@ -4,20 +4,26 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic');
 
 body {
-    background: lightskyblue;
     margin: 0px;
-
 
 }
 
 main {
-    //background: #ffffff;
+
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+.container {
+    width: 1200px;
+    padding: 0px;
+    margin: auto;
+
+}
+
 
 
 
@@ -30,13 +36,16 @@ img {
 }
 
 
-
 .page-header-top {
     display: flex;
-    min-width: 1200px; 
+    min-width: 1180px; 
     min-height: 42px;
     background: #293449;
     
+}
+
+.container .page-header-top {
+	
 }
 
 
@@ -57,7 +66,6 @@ img {
     box-shadow: 0px 5px 0 #B6242f;
     margin: 0px 0px 0px 130px;
     
-
 }
 
 .page-header-logo:hover {
@@ -74,9 +82,6 @@ img {
 }
 
 
-
-
-
 .search-field {
     display: flex;
     min-width: 238px;
@@ -85,11 +90,7 @@ img {
     font-size: 17px;
     color: #ffffff;
     margin: 0px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.06;
-    letter-spacing: normal;
     text-align: left;
 
 }
@@ -97,8 +98,6 @@ img {
 .search-field :first-child {
     display: flex;
 }
-
-
 
 
 .search-field > label :first-child {
@@ -112,27 +111,16 @@ img {
 }
 
 
-
-
-
-
-
 .search-field > label :hover {
     background:  #212a3a;
     border:  #212a3a solid 2px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.06;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
 
-
 }
-
 
 
 .search-field > label :focus {
@@ -140,29 +128,19 @@ img {
     border: #ffffff solid 2px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.06;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
 
 }
 
 
-
-
-
-
-
-
 .search-field > input {
     visibility: hidden;
     width: 0px;
     padding: 0px;
-}
 
+}
 
 
 .page-header-consumer-block {
@@ -187,18 +165,18 @@ img {
     opacity: 0.3;
 }
 
+
 .page-header-cart svg {
     margin: 12px 17px 15px 25px;
     opacity: 0.3;
 
 }
 
+
 .page-header-order {
     background: #63a63e;
     justify-content: center;
 }
-
-
 
 
 .page-header-consumer-block a {
@@ -209,6 +187,7 @@ img {
     align-items: center;
     
 }
+
 
 .page-header-consumer-block li {
     flex-grow: 1;
@@ -227,23 +206,29 @@ img {
     
 }
 
+
 .page-header-bookmark:hover path {
     background-color: #ffffff;
+
 }
+
 
 .page-header-bookmark:focus path {
     fill: #8C8F95; 
+
 }
+
 
 .page-header-cart:hover path {
     background-color: #ffffff;
+
 }
+
 
 .page-header-cart:focus path {
     fill: #8C8F95; 
+
 }
-
-
 
 
 .page-header-consumer-block .page-header-order:hover {
@@ -257,48 +242,44 @@ img {
 }
 
 
-
-
-
 .page-header-for-user {
     display: flex;
     justify-content: space-between;
     font-family: "Cuprum", Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.06;
-    letter-spacing: normal;
     color: #ffffff;
+	margin: 0;
+	align-items: center; 
+	
+}
 
+.container .page-header-for-user {
+    width: 920px;
+	min-height: 158px;
+    padding: 0px 10px;
+    margin: auto;
+	
 }
 
 
 .page-header-for-user a {
     text-decoration: none;
+
 }
 
 
-
-
 .page-header-info {
-    display: block;
     width: 197px;
     min-height: 55px;
     color: #ee3643; 
     font-family: "Cuprum", Arial, sans-serif;
     font-style: italic;
     font-size: 16px;
-    text-align: left;
-    font-weight: normal;
-    font-stretch: normal;
     line-height: 1.44;
-    letter-spacing: normal;
-    margin: 49px 65px 16px 183px;
-    white-space: pre;
+	margin: auto; 
+    
 
 }
-
 
 
 .page-header-contacts {
@@ -310,10 +291,11 @@ img {
     text-align: center;
     line-height: 24px;   
     color: #32425c; 
-    margin: 42px 69px 40px 0px;
+    margin: auto; 
     white-space: nowrap;
     
 }
+
 
 .page-header-contacts a {
     display: flex;
@@ -321,34 +303,26 @@ img {
     color: #ee3643; 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
     align-items: center;
 
 }
-
 
 
 .page-header-login  {
     display: flex;
-    margin: 20px 125px 40px 0px;
+    margin: auto; 
     padding: 0px;
     list-style-type: none;
     align-items: center;
     
-
 }
-
 
 
 .page-header-login svg {
     margin: 14px;
-}
 
+}
 
 
 .login a {
@@ -356,11 +330,7 @@ img {
     border: 5px solid #f4f7f9;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     align-items: center;
@@ -370,16 +340,13 @@ img {
 
 }
 
+
 .registration a {
     display: flex;
     border: 5px solid #f4f7f9;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     align-items: center;
@@ -391,44 +358,38 @@ img {
 }
 
 
-
 .page-header-login a:hover {
     color: #ee3643;
     fill: #2E405C;
 
 }
 
+
 .page-header-login a:focus {
     color: #c5c5c5;
+
 }
 
 
 .user-navigation {
     padding: 0px;
     list-style-type: none;
-    //display: flex;
-    //flex-wrap: wrap;
-    min-width: 299px;
-    margin: 0px;
+    width: 299px;
+	min-height: 45px; 
 
 }
+
 
 .username {
     min-width: 299px;
     font-size: 21px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 45px;
-    letter-spacing: normal;
     color: #000000;
     background: #ffffff;
     display: block;
     text-align: center;
-    margin: 46px 130px 10px 51px;
+    margin: auto; 
 }
-
-
 
 
 .site-navigation {
@@ -438,19 +399,27 @@ img {
     background: #32425c;
     box-shadow: 0px 5px 0 #293449;
     list-style-type: none;
-    margin: 0px 130px 0px 130px;
     align-items: center;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     color: #ffffff;
     padding: 0px;
+	margin: 0px;
     
+}
 
+
+.container .site-navigation {
+	width: 940px; 
+	padding: 0px; 
+	margin: auto; 
 }
 
 .site-navigation li {
     flex-grow: 1;
+
 }
+
 
 .site-navigation a {
     text-decoration: none;
@@ -459,7 +428,6 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 55px;
-
     
 }
 
@@ -477,20 +445,22 @@ img {
 }
 
 
-
-
-
 .menu-slider {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
-    margin: 50px 120px 50px 120px;
-    padding: 0px;
     font-family: "Cuprum", Arial, sans-serif;
-    min-width: 963px;
     min-height: 400px;
-    justify-content: center;
 
+}
+
+.container .menu-slider {
+	width: 940px;
+    padding: 0px;
+    margin: auto;
+    margin-top: 60px;
+	box-sizing: border-box;
+	justify-content: space-between;
 }
 
 
@@ -498,7 +468,7 @@ img {
 .menu-slider a {
     display: block;
     width: 135px;
-    height: 38px;
+    min-height: 38px;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -506,7 +476,9 @@ img {
     line-height: 38px;
     margin: 15px 0 22px 22px;
     text-decoration: none;
+
 }
+
 
 .menu-slider p {
     display: block;
@@ -515,23 +487,43 @@ img {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 24px;
     font-weight: bold;
-    line-height: 1.25;
-    text-align: left;
-    margin: 26px auto 15px 23px;
+    line-height: 80px;
+    margin: 0px auto 45px 23px;
     color: white;
+
 }
 
-.menu-slider-materials {
-    min-width: 300px;
+/*
+.menu-slider li:first-child {
+	min-width: 300px;
     min-height: 123px;
     margin: 10px 10px 20px 10px;
     position: relative;
-    background:  #ffbf47 url(../img/svg/icon-1.svg) no-repeat 84% 55%;
+	background-color: #ffbf47;
+    background-image: url(../img/svg/icon-1.svg);
+	background-repeat: no-repeat; 
+	background-position: 84% 55%;
+}*/
+
+
+
+
+
+.menu-slider-materials {
+    width: 300px;
+    min-height: 123px;
+    margin-bottom: 20px;
+    position: relative;
+	background-color: #ffbf47;
+    background-image: url(../img/svg/icon-1.svg);
+	background-repeat: no-repeat; 
+	background-position: 84% 55%;
     
 }
 
 .menu-slider-materials a {
     background: #E6AD3E;
+
 }
 
 
@@ -539,6 +531,7 @@ img {
     position: absolute;
     bottom: 53%;
     left: 80%;
+
 }
 
 .menu-slider-materials a:hover {
@@ -548,76 +541,78 @@ img {
 
 .menu-slider-materials a:focus {
     background-color: rgba(0,0,0,0.3);
-    
 
 }
 
 
 .menu-slider-tools {
-    min-width: 300px;
+    width: 300px;
     min-height: 123px;
     background: #3bbce3 url(../img/svg/icon-2.svg) no-repeat 88% 55%;
-    margin: 10px 10px 20px 10px;
+    margin-bottom: 20px; 
     position: relative;
-    
     
 }
 
 .menu-slider-tools a {
     background: #32AACD;
+    
 }
+
 
 .menu-slider-tools img {
     position: absolute;
     bottom: 53%;
     left: 80%;
     display: none;
+
 }
+
 
 .menu-slider-tools a:hover {
     background-color: rgba(0,0,0,0.2);
 
 }
 
+
 .menu-slider-tools a:focus {
     background-color: rgba(0,0,0,0.3);
 }
 
 
-
-
-
 .menu-slider-equipment {
-    min-width: 300px;
+    width: 300px;
     min-height: 123px;
-    //margin-right: 130px; 
     background: #dc91d8 url(../img/svg/icon-3.svg) no-repeat 88% 55%;
-    margin: 10px 10px 20px 10px;
+    margin-bottom: 20px;
 
 }
 
 .menu-slider-equipment a {
     background: #C783C3;
+
 }
+
 
 .menu-slider-equipment img {
     position: absolute;
     bottom: 53%;
     left: 80%;
     display: none;
+
 }
+
 
 .menu-slider-equipment a:hover {
     background-color: rgba(0,0,0,0.2);
 
 }
 
+
 .menu-slider-equipment a:focus {
     background-color: rgba(0,0,0,0.3);
 
 }
-
-
 
 
 .slider {
@@ -626,12 +621,15 @@ img {
     float: left;
     background: rgb(87, 86, 85);
     position: relative;
+
 }
+
 
 .slider ul {
     list-style-type: none;
     padding: 0px;
 }
+
 
 .slider-buttons {
     display: flex;
@@ -648,17 +646,16 @@ img {
     
 }
 
-
-
-
   
 .slide-1 {
     position: relative; 
+
 }
   
+
 .slide-1 span {
     display: block;
-    min-width: 95px;
+    width: 95px;
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
@@ -666,8 +663,10 @@ img {
     color: #ffffff;
     top: 22px;
     left: 22px;
+
 }
   
+
 .slide-1 p {
     display: block;
     min-width: 145px;
@@ -677,7 +676,6 @@ img {
     position: absolute;
     top: 40px;
     line-height: 1.33;
-    font-weight: normal;
     margin: 20px 0px 0px 25px; 
   
 }
@@ -706,11 +704,11 @@ img {
   
 }
   
+
 .slide-1 a:focus {
     background: #BB222E
   
 }
-  
   
   
 .slide-2 {
@@ -719,6 +717,7 @@ img {
 
 }
   
+
 .slide-2 span {
     display: block;
     min-width: 95px;
@@ -729,8 +728,10 @@ img {
     color: #ffffff;
     top: 20px;
     right: 390px;
+
 }
   
+
 .slide-2 p {
     display: block;
     min-width: 145px;
@@ -740,7 +741,6 @@ img {
     position: absolute;
     top: 40px;
     line-height: 1.33;
-    font-weight: normal;
     margin: 20px 0px 0px 25px; 
     left: 0px;
   
@@ -775,18 +775,14 @@ img {
     background: #BB222E
   
 }
-  
-  
-
-
 
 
 .menu-slider-sale {
-    min-width: 300px;
+    width: 300px;
     min-height: 123px;
     background: #8ed78f url(../img/svg/icon-4.svg) no-repeat 81% 55%;
-    margin: 0px auto 20px 20px;
-    border: 1px solid transparent;
+    margin-bottom: 20px;
+	position: relative;
 
 }
 
@@ -795,6 +791,7 @@ img {
     background: #81C281;
 }
 
+
 .menu-slider-sale img {
     position: absolute;
     bottom: 53%;
@@ -802,10 +799,12 @@ img {
     display: none;
 }
 
+
 .menu-slider-sale a:hover {
     background-color: rgba(0,0,0,0.2);
 
 }
+
 
 .menu-slider-sale a:focus {
     background-color: rgba(0,0,0,0.3);
@@ -814,16 +813,17 @@ img {
 
 
 .menu-slider-delivery {
-    min-width: 300px;
+    width: 300px;
     min-height: 123px;
     background: #ffbf47 url(../img/svg/icon-5.svg) no-repeat 85% 55%;
-    margin: 0px auto 0px 20px;
-    border: 1px solid transparent;
+    margin-bottom: 20px;
+	position: relative;
 
 }
 
 .menu-slider-delivery a {
     background: #E6AD3E;
+
 }
 
 .menu-slider-delivery img {
@@ -831,6 +831,7 @@ img {
     bottom: 53%;
     left: 80%;
     display: none;
+
 }
 
 .menu-slider-delivery a:hover {
@@ -838,60 +839,65 @@ img {
 
 }
 
+
 .menu-slider-delivery a:focus {
     background-color: rgba(0,0,0,0.3);
 
 }
 
 
-
 .menu-slider-rest ul {
     list-style-type: none;
     padding: 0px;
+
 }
+
+
 
 .popular {
     min-width: 940px
     
 }
 
+
+.container .popular {
+	width: 920px;
+    padding: 0px 10px;
+    margin: auto;
+    margin-top: 26px; 
+	
+}
+
+
 .popular header {
     display: flex;
     background: #f9f5f0;
-    margin: 0px 130px 21px 130px;
-    min-width: 940px;
+    margin: 0px auto 20px auto;
+    width: 940px;
     justify-content: center;
     align-items: center;
     min-height: 89px;
     flex-wrap: wrap;
+
 }
 
 .popular h2 {
     display: block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: left;
     color: #32425c;
     text-transform: uppercase;
-    margin: 33px auto 35px 30px;
+    margin: 25px auto 25px 30px;
     
-
 }
 
 
 .popular header :last-child {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.29;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -905,15 +911,16 @@ img {
     border-radius: 5px;
 }
 
+
 .popular header :last-child:hover {
     background: #CB2834;
+
 }
 
 .popular header :last-child:focus {
     background: #BB222E;
+    
 }
-
-
 
 
 .popular-list {
@@ -922,15 +929,21 @@ img {
     flex-wrap: wrap;
     min-width: 940px;
     justify-content: space-between;
-    margin: 0px 130px 21px 130px;
-    
+    margin: 0px;
     
 }
 
 
-
 .popular-list article:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+
+}
+
+.popular-list article:hover .product-back-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 
@@ -941,8 +954,10 @@ img {
 
 }
 
+
 .popular-list a {
     text-decoration: none;
+
 }
 
 
@@ -951,10 +966,7 @@ img {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.11;
-    letter-spacing: normal;
     text-align: center;
     color: #000000;
     min-width: 155px;
@@ -962,6 +974,7 @@ img {
     margin: 3px 30px 13px 30px;
     
 }
+
 
 .popular-list article {
     width: 218px;
@@ -971,6 +984,7 @@ img {
     border: solid 1px #eaeaea;
     margin-bottom: 20px;
     position: relative;
+
 }
 
 
@@ -981,20 +995,17 @@ img {
 }
 
 
-
 .normal-price {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 17px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.06;
-    letter-spacing: normal;
     text-align: center;
     color: #a9a9a9;
     text-decoration: line-through; 
     padding: 0px;
     margin: 0px 0px 9px 0px;
+
 }
 
 
@@ -1002,10 +1013,7 @@ img {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 17px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 35px;
-    letter-spacing: normal;
     background: url(../img/main/good-btn-main.png) no-repeat 50% 50%;
     color: #ffffff;
     min-width: 141px;
@@ -1013,7 +1021,6 @@ img {
     margin: 0 21px 22px 29px;
     text-align: center;
     
-
 }
 
 
@@ -1022,22 +1029,10 @@ img {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.11;
-    letter-spacing: normal;
-    //text-align: center;
     color: #000000;
 
 }
-
-
-
-
-
-
-
-
 
 
 .popular-goods-list-new {
@@ -1046,8 +1041,9 @@ img {
     width: 220px;
     height: 318px;
     background: #ffffff;
-    //margin: 10px;
+
 }
+
 
 .popular-goods-list-new :nth-child(2) {
     position: absolute;
@@ -1056,41 +1052,39 @@ img {
 }
 
 
-
-
-
-
-
 .producers {
     min-width: 940px;
 
 }
 
 
+.container .producers {
+	width: 920px;
+    padding: 0px 10px;
+    margin: auto;
+    margin-bottom: 65px;
+}
+
 .producers header {
     display: flex;
     background: #f9f5f0;
-    margin: 0px 130px 21px 130px;
     min-width: 940px;
     justify-content: center;
     align-items: center;
     min-height: 89px;
     flex-wrap: wrap;
+
 }
 
 
 .producers h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: left;
     color: #32425c;
     text-transform: uppercase;
-    margin: 33px auto 35px 30px;
+    margin: 25px auto 25px 30px;;
 
 }
 
@@ -1098,11 +1092,7 @@ img {
 .producers header :last-child {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.29;
-    letter-spacing: normal;
     color: #ffffff;
     text-decoration: none;
     background: #ee3643;
@@ -1114,17 +1104,19 @@ img {
     justify-content: center;
     border-radius: 5px;
 
-
 }
+
 
 .producers header :last-child:hover {
     background: #CB2834;
+
 }
+
 
 .producers header :last-child:focus {
     background: #BB222E;
-}
 
+}
 
 
 .producers-list {
@@ -1132,9 +1124,9 @@ img {
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 130px 70px 130px;
-    min-width: 940px;
+    width: 940px;
     padding: 0px;
+
 }
 
 
@@ -1144,6 +1136,7 @@ img {
     justify-content: center;
     height: 100%;
     width: 100%;
+
 }
 
 
@@ -1157,12 +1150,15 @@ img {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+
 }
+
 
 .producers-list a:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 
 }
+
 
 .producers-list a:focus {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
@@ -1170,56 +1166,61 @@ img {
 }
 
 
-
-
-
-
 .services {
-    visibility: hidden;
-    display: block; 
-    min-width: 1200px;
-    height: 522px;
+    display: flex; 
+    width: 940px;
+    min-height: 522px;
     background: #f4f7f9;
+	justify-content: space-between;
+	flex-wrap: wrap;
 
 }
 
+.container .services{
+	min-width: 940px;
+    padding: 0px 10px;
+    margin: auto;
+	
+}
+
+.services-header {
+	width: 100%; 
+	
+}
+
+
+
+.services-list {
+	width: 30%; 
+	
+}
+
+
+
+
 .services p {
     font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.85;
-    letter-spacing: normal;
-    text-align: left;
     color: #000000;
     font-family: 'PT Sans', Arial, sans-serif;
     padding: 0px;
 }
 
 
-
 .services h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     color: #000000;
     text-transform: uppercase;
     padding: 0px;
 
 }
 
+
 .services h3 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     color: #32425c;
     text-transform: uppercase;
     padding: 0px;
@@ -1228,41 +1229,46 @@ img {
 
 
 .shipping-service {
+	width: 70%;
 
 }
 
 
 .warranty-service {
-
+ display: none; 
 }
 
 
 .credit-services {
+ display: none; 
 
 }
 
 
-
 .about-us-contacts {
     display: flex;
-    min-width: 1200px;
     min-height: 540px;
     background: #ffffff;
+	justify-content: space-between;
 
+}
+
+
+.container .about-us-contacts {
+	width: 940px;
+    padding: 0px;
+    margin: auto;
+	
 }
 
 .about-us h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
-    margin: 75px 339px 25px 130px;
+    margin: 75px auto 25px 0px;
     min-width: 302px;
 }
 
@@ -1271,64 +1277,54 @@ img {
 .about-us p {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.85;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
-    margin: 0px 120px 26px 130px;
+    margin: 0px auto 26px 0px;
     
 }
 
 
-
-
-
 .about-us a {
     font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  width: 220px;
-  height: 38px;
-  background-color: #ee3643;
-  border-radius: 5px;
-  margin: 37px 420px 86px 130px;
-  line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 220px;
+    height: 38px;
+    background-color: #ee3643;
+    border-radius: 5px;
+    margin: 37px auto 86px 0px;
+    line-height: 38px;
 
 }
+
 
 .about-us a:hover {
     background: #ca2c37;
+
 }
+
 
 .about-us a:focus {
     background: #ba2732;
+
 }
 
+
 .about-us ul {
-    padding: 0px;
-    margin: 0px 420px 0px 160px;
+    margin: 0px 420px 0px 0px;
+
 }
 
 
 .about-us li {
     font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.11;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
   list-style-image: url(../img/main/list-icon-main.png); 
@@ -1337,41 +1333,32 @@ img {
 }
 
 
-
 .contacts h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
-    margin: 75px 309px 25px 0px;
+    margin: 75px auto 25px 0px;
 }
+
 
 .contacts p {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.85;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
-    margin: 0px 252px 36px 0px;
+    margin: 0px auto 35px 0px;
+	width: 179px;
+	min-height: 36px;
 }
+
 
 .contacts a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -1380,48 +1367,52 @@ img {
     width: 300px;
     height: 38px;
     background-color: #ee3643;
-    margin: 33px 130px 86px 0px;
+    margin: 33px 0px 86px 0px;
     border-radius: 5px;
     line-height: 38px;
 
 }
 
+
 .contacts a:hover {
     background: #ca2c37;
+
 }
 
 .contacts a:focus {
     background: #ba2732;
+
 }
+
 /*каталог*/
 
 
 .breadcrumbs {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     counter-reset: flag;
     display: flex;
-    margin: 15px 0px 0px 110px;
+    margin: 15px 0px 20px 110px;
     padding: 0px;
     text-transform: uppercase;
 
 }
 
+
 .breadcrumbs svg {
     margin: 13px 10px 0px 0px;
+
 }
+
 
 .breadcrumbs li {
     padding: 0px;
     list-style-type: none;
     background-color: white;
+
 }
 
   
@@ -1435,8 +1426,9 @@ img {
     padding: 0px;
     margin: 0px 14px 0px 20px;
 
-  }
+}
   
+
 .breadcrumbs a::after {
     position: absolute;
     top: 9px;
@@ -1448,51 +1440,58 @@ img {
     box-shadow: 1px 1px 0 1px #dddddd;
     content: "";
     transform: rotate(-45deg) scale(0.33);
-  }
 
-
-
-
-
+}
 
 
 .main-title {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 89px;
-    letter-spacing: normal;
     text-align: left;
     color: #32425c;
-    min-width: 910px;
     min-height: 89px;
     background-color:#f2f6f8;
-    margin: 10px 100px 0px 130px;
-    padding-left: 30px;
     text-transform: uppercase;
 
 }
 
+.container .main-title {
+	width: 910px;
+    padding-left: 30px;
+    margin: auto;
+}
+
+
+
+
 
 .catalog {
     display: flex;
+
 }
 
+.container .catalog {
+	width: 940px;
+    padding: 0px;
+    margin: auto;
+	
+}
+
+
 .catalog-form {
-    margin: 20px 0px 0px 130px;
+    margin-top: 20px;
     min-width: 225px;
 
 }
+
 
 .catalog-form fieldset {
     border:0 none;
     padding: 0px;
     margin: 0px;
 
- }
-
+}
 
 
 .catalog-form button{
@@ -1500,11 +1499,7 @@ img {
     height: 38px;
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -1515,11 +1510,7 @@ img {
 .catalog-form > div {
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
@@ -1542,6 +1533,7 @@ img {
 
 }
 
+
 .price-slider a:first-child {
     position: absolute;
     top: 35%;
@@ -1549,14 +1541,17 @@ img {
 
 }
 
+
 .price-slider a:last-child {
     position: absolute;
     top: 35%;
     right: 13%;
+
 }
 
 .catalog-form-slider label {
     margin: 10px 0px 10px 10px;
+
 }
 
 
@@ -1568,11 +1563,13 @@ img {
 
 }
 
+
 .right-price {
     width: 85px;
     height: 30px;
     background-color: #f7f3ec;
     text-align: center;
+
 }
 
 
@@ -1580,75 +1577,66 @@ img {
     font-size: 17px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.76;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
 }
 
-.catalog-producers-filter {
-    
 
+.catalog-producers-filter {
 }
+
 
 .catalog-producers-filter ul {
     padding: 0px;
 
 }
 
+
 .catalog-producers-filter li {
     list-style-type: none;
 
 }
 
+
 .catalog-producers-filter label{
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
+
 }
+
 
 .catalog-producers-filter legend {
     font-size: 17px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.76;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
+
 }
+
 
 .catalog-producers-filter label {
     font-size: 15px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
 }
 
 
-
-
 .catalog-powering-type {
-
 }
+
 
 .catalog-powering-type ul {
     padding: 0px;
+
 }
 
 .catalog-powering-type li {
@@ -1660,36 +1648,28 @@ img {
 .catalog-powering-type label {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
+
 }
+
 
 .catalog-powering-type legend {
     font-size: 17px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.76;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
 
 }
 
 
-
-
-
 .goods {
-
 }
+
 
 .goods h2 {
     visibility: hidden;
@@ -1697,26 +1677,33 @@ img {
     margin: 0px;
     width: 0px;
     height: 0px;
+
 }
 
+
 .goods-header {
-    min-width: 700px;
+    min-width: 695px;
     min-height: 38px;
     background-color: #f7f3ec;
     display: flex;
     align-items: center;
-    margin: 20px 130px 0px 20px;
+    margin: 20px 0px 0px 20px;
     min-height: 38px;
+	flex-wrap: wrap;
 
 }
+
 
 .product-list {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    margin: 10px 115px 0px 10px;
+    margin-left: 20px; 
     position: relative;
+	justify-content: space-between;
+
 }
+
 
 .product-card .new-product {
     position: absolute;
@@ -1728,6 +1715,7 @@ img {
 
 .product-card:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+
 }
 
 
@@ -1736,10 +1724,7 @@ img {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.11;
-    letter-spacing: normal;
     text-align: center;
     color:#000000;
     min-width: 155px;
@@ -1749,19 +1734,10 @@ img {
 }
 
 
-
-
-
-
-
 .selection-buttons {
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     display: flex;
@@ -1771,30 +1747,25 @@ img {
 
 }
 
+
 .selection-buttons li {
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
     list-style-type: none;
     flex-grow: 1;
     margin-left: 20px;
+
 }
+
 
 .selection-buttons a {
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
     color: rgba(0, 0, 0, 0.18);
     text-transform: uppercase;
@@ -1802,11 +1773,13 @@ img {
     text-decoration: none;
 }
 
+
 .selection-buttons a:hover {
     color: #000000; 
     border-bottom: solid 2px #ee3643;
 
 }
+
 
 .selection-buttons a:focus {
     color: #ee3643;
@@ -1815,73 +1788,56 @@ img {
 }
 
 
-
-
-
-
 .selection-buttons-price {
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
     color: #ee3643;
 
 }
 
-.selection-buttons-price:hover {
 
+.selection-buttons-price:hover {
 }
+
 
 .selection-buttons-price:focus {
-
 }
+
 
 .selection-buttons-type {
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
     color: #ee3643;
 
 }
 
-.selection-buttons-type:hover {
 
+.selection-buttons-type:hover {
 }
 
 .selection-buttons-type:focus {
-
 }
+
 
 .selection-buttons-function {
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
     color: #ee3643;
 
 }
 
-.selection-buttons-function:hover {
 
+.selection-buttons-function:hover {
 }
 
 .selection-buttons-function:focus {
-
 }
-
 
 
 .selection-arrows {
@@ -1894,17 +1850,18 @@ img {
 
 }
 
+
 .selection-arrows li {
     margin: 0px 20px 0px 0px;
 }
 
-.less-to-more {
 
+.less-to-more {
 }
 
 .more-to-less {
-
 }
+
 
 .product-card {
     display: block;
@@ -1912,30 +1869,33 @@ img {
     min-height: 318px;
     background: #ffffff;
     border: 1px solid #e5e5e5;
-    margin: 10px;
+    margin-bottom: 20px;
     position: relative; 
 
 }
+
 
 .product-card h3 {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.11;
-    letter-spacing: normal;
     text-align: center;
     color: #000000;
 
 }
 
+
 .product-card a {
     text-decoration: none;
+
 }
 
 
+.product-card:nth-child(3n) .normal-price {
+    display: none;
 
+}
 
 
 .product-back-side {
@@ -1948,25 +1908,28 @@ img {
     padding: 40px 0;
     background-color: #ffffff;
     list-style-type: none;
+    margin: 0px;
+
 }
+
 
 .product-back-side li {
     margin-bottom: 8px;
     text-align: center;
+
 }
+
 
 .product-back-side a {
     font-size: 14px;
     font-family: "Cuprum", Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 38px;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+
 }
+
 
 .product-back-side .buy {
     display: block;
@@ -1974,6 +1937,7 @@ img {
     height: 38px;
     box-shadow: inset 0px -3px 0 0 #367315;
     background: #63a63e;
+
 }
 
 
@@ -1984,36 +1948,16 @@ img {
     border: solid 3px #63a63e;
     color: black;
     box-sizing: border-box;
+
 }
 
 
 .product-card:hover .product-back-side {
-    display: block;
-}
-
-
-
-
-.product-card-new {
-    display: block;
-    width: 218px;
-    min-height: 318px;
-    background: #ffffff;
-    border: 1px solid #e5e5e5;
-    margin: 10px;
-    position: relative; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
-.product-card-new img {
-    position: absolute;
-    top: -0.3%;
-    left: 73%;
-
-
-}
-
-
-
 
 
 .pagination {
@@ -2027,6 +1971,7 @@ img {
 
 }
 
+
 .pagination li {
     margin: 0px 5px;
 
@@ -2037,11 +1982,7 @@ img {
     display: block;
     font-size: 13px;
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 35px;
-    letter-spacing: normal;
     text-align: center;
     color: #000000;
     min-width: 38px;
@@ -2053,39 +1994,28 @@ img {
     border: solid 1px #e5e5e5;
 }
 
+
 .pagination .next {
-    //text-indent: -1000px;
     min-width: 140px;
     color: #000000;
 
+}
   
-  }
-  
-  .pagination .current {
+.pagination .current {
     background-color: #ee3643;
-  }
+
+}
   
   
-  .pagination a:hover {
+.pagination a:hover {
     border: solid 1px #bdc6ca;
-  }
 
-  .pagination a:focus {
+}
+
+
+.pagination a:focus {
     border: solid 1px #ee3643;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 .hammer-drill-info {
@@ -2094,14 +2024,18 @@ img {
 
 }
 
+.container .hammer-drill-info {
+	width: 940px;
+    padding: 0px;
+    margin: auto;
+	
+}
+
+
 .hammer-drill-info h2 {
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     color: #000000;
     padding-top: 67px;
     text-transform: uppercase;
@@ -2109,35 +2043,31 @@ img {
 
 }
 
+
 .hammer-drill-info p {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.85;
-    letter-spacing: normal;
     color: #000000;
     padding: 0px;
     margin: 0px 159px 0px 130px;
     padding-bottom: 71px;
     white-space: pre;
+
 }
+
 
 .product-in-cart {
     display: none;
 
 }
 
-.product-in-cart-options {
 
+.product-in-cart-options {
 }
 
 
-
-
 .page-footer {
-    
 }
 
 
@@ -2148,9 +2078,20 @@ img {
     
 }
 
+
 .page-footer-menu-logo {
     display: flex;
+    
 }
+
+
+.container .page-footer-menu-logo{
+	width: 940px;
+    padding: 0px;
+    margin: auto;
+	
+}
+
 
 .page-footer-navigation img {
     display: block;
@@ -2165,12 +2106,12 @@ img {
     display: block; 
     width: 220px; 
     height: 63px;
-    /*background-color: #ee3643;
-    box-shadow: 0px 5px 0 #B6242f;*/
+    box-shadow: 0px 5px 0 #B6242f;
     background: #ee3643 url(../img/footer/back-footer-logo.png) no-repeat;
-    margin: 0px 0px 0px 130px;
+    margin: 0px 173px 0px 0px;
 
 }
+
 
 .page-footer-logo:hover {
     background: #ba2732;
@@ -2186,36 +2127,27 @@ img {
 }
 
 
-
 .footer-site-nav {
     display: flex;
     background: #32425c;
     list-style-type: none;
-    justify-content: space-between;
-    margin: 35px 130px 0px 173px;
+    justify-content: space-around;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     color: #f1f5f7;
     padding: 0px; 
     flex-grow: 1;
     flex-wrap: wrap;
-    
-
 
 }
+
 
 .footer-site-nav a {
     text-decoration: none;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     color: #f1f5f7;
-
-    
     
 }
 
@@ -2226,6 +2158,7 @@ img {
 
 }
 
+
 .footer-site-nav a:focus {
     color: rgba(241, 245, 247, 0.5); 
     text-decoration: none;
@@ -2233,13 +2166,18 @@ img {
 }
 
 
-
-
-
 .page-footer-info-offers {
     display: flex;
 
 }
+
+.container .page-footer-info-offers {
+	width: 920px;
+    padding: 0px 10px;
+    margin: auto;
+}
+
+
 
 .page-footer-info-offers p {
     font-size: 18px; 
@@ -2248,13 +2186,15 @@ img {
     display: block;
     width: 335px;
     height: 40px;
-    margin: 32px 81px 53px 130px;
+    margin: 32px auto 53px 0px;
+
 }
+
 
 .page-footer-offers {
     display: flex;
     justify-content: space-between;
-    margin: 30px 130px 53px 0px;
+    margin: 30px 0px 53px 91px;
     flex-grow: 1;
     padding: 0px;
     list-style: none;
@@ -2268,18 +2208,17 @@ img {
     color: #ffd180;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
+    
 }
+
 
 .page-footer-offers a:hover {
     color: #ffd180;
     text-decoration: underline;
 
 }
+
 
 .page-footer-offers a:focus {
     color: rgba(255, 209, 128, 0.5); 
@@ -2288,19 +2227,22 @@ img {
 }
 
 
-
-
-
 .page-footer-social-feedback {
     background: #293449; 
     display: flex;
-    min-width: 1200px;
+    min-width: 1180px;
     justify-content: space-between;
     font-family: "Cuprum", Arial, sans-serif;
     flex-wrap: wrap;
 
 }
 
+.container .page-footer-social-feedback {
+	width: 920px;
+    padding: 0px 10px;
+    margin: auto;
+	
+}
 
 
 .page-footer-social-feedback p {
@@ -2309,21 +2251,20 @@ img {
     height: 23px; 
     padding: 0px; 
     color: #ffffff;
-    margin: 39px 120px 33px 130px;
+    margin: 39px auto 33px 130px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.13;
-    letter-spacing: normal;
 
 }
+
 
 .page-footer-social-feedback a {
     color: #ffd180;
     text-decoration: none;
+
 }
+
 
 .social-list {
     text-decoration: none;
@@ -2334,6 +2275,7 @@ img {
     
 }
 
+
 .social-list li {
     display: flex;
     width: 42px;
@@ -2341,41 +2283,26 @@ img {
     background: #212a3a;
     border-radius: 50%;
     margin: 0px 3px 0px 3px;
-}
 
+}
 
 
 .social-list li:hover {
     background:#ee3643;
+
 }
 
 .social-list li:focus {
     background: #ee3643;
+
 }
 
-/*
-.social-list :first-child svg {
-    margin: 13px 8px 14px 8px;
-}
-
-.social-list :nth-child(2) svg {
-    margin: 10px 15px 10px 15px;
-}
-
-.social-list :nth-child(3) svg {
-    margin: 10px 11px 11px 10px;
-}
-*/
-
-
- 
 
 .footer-contacts {
     display: flex;
     margin: 40px 120px 33px 90px;
 
 }
-
 
 
 .footer-contacts .mail {
@@ -2389,6 +2316,7 @@ img {
 
 }
 
+
 .footer-contacts .url {
     padding: 0px;
     margin: 0px;
@@ -2396,6 +2324,7 @@ img {
     height: 34px;
     word-spacing: normal;
     color:#ffffff;
+
 }
 
 
@@ -2404,6 +2333,7 @@ img {
     text-decoration: underline;
 
 }
+
 
 .mail a:focus {
     color: #ee3643;
@@ -2448,8 +2378,6 @@ img {
     border: solid 2px #dee3e4;
 
 }
-
-
 
 .feedback-email {
     min-width: 220px;

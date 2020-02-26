@@ -1714,8 +1714,81 @@ main .container {
     outline: 1px solid lightseagreen;
     
 
+.catalog-producers-filter .check,
+.catalog-powering-type .radio {
+    padding-left: 35px;
 }
 
+.catalog-producers-filter .check-input,
+.catalog-powering-type .radio-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+}
+
+.catalog-producers-filter .check-box {
+    position: absolute;
+    width: 25px;
+    height: 23px;
+    background-image: url(../img/svg/checkbox-off.svg); 
+    background-repeat: no-repeat;
+    left: 0px;
+}
+
+.check-input:checked + .check-box {
+    background-image: url(../img/svg/checkbox-on.svg); 
+    background-repeat: no-repeat;
+    
+}
+
+.check-input:focus + .check-box {
+    background-image: url(../img/svg/checkbox-off.svg); 
+    background-repeat: no-repeat;
+    outline: 1px solid lightseagreen;
+}
+
+.check-input:checked:focus + .check-box {
+    background-image: url(../img/svg/checkbox-on.svg); 
+    background-repeat: no-repeat;
+    outline: 1px solid lightseagreen;
+    
+
+}
+
+
+
+.catalog-powering-type .radio-button {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/svg/radio-off.svg); 
+    background-repeat: no-repeat;
+    left: 0px;
+}
+
+.radio-input:checked + .radio-button {
+    background-image: url(../img/svg/radio-on.svg); 
+    background-repeat: no-repeat;
+
+}
+
+
+.radio-input:focus + .radio-button {
+    background-image: url(../img/svg/radio-off.svg); 
+    background-repeat: no-repeat;
+    outline: 1px solid lightseagreen;
+    -moz-outline-radius: 50%;
+}
+
+.radio-input:checked:focus + .radio-button {
+    background-image: url(../img/svg/radio-on.svg); 
+    background-repeat: no-repeat;
+    outline: 1px solid lightseagreen;
+    -moz-outline-radius: 50%;
+}
+
+/*Сделать outline через shadow*/
 
 
 .catalog-powering-type .radio-button {
@@ -2309,6 +2382,18 @@ main .container {
 
 
 
+
+.product-in-cart-options a:hover {
+	background-color: #ca2c37;
+}
+
+.product-in-cart-options a:focus {
+	background-color: #ffffff;
+	color: #000000; 
+}
+
+
+
 .page-footer {
 }
 
@@ -2691,9 +2776,6 @@ main .container {
 	background-color: #f4f4f4; 
 	margin: auto;
 }
-
-
-
 
 .popup-feedback .container {
     width: 480px;

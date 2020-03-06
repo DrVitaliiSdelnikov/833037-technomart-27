@@ -454,11 +454,11 @@ input[type="search"]:focus + button path {
 }
 
 .site-navigation li:first-child {
-    flex-grow: 1.5;
+    flex-grow: 1.7;
 }
 
 .site-navigation li:last-child {
-    flex-grow: 1.5;
+    flex-grow: 1.7;
 }
 
 .site-navigation a {

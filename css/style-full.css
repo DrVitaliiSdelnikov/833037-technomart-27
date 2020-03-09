@@ -161,11 +161,8 @@ input[type="search"]:focus + button path {
   fill: #F3747D;
 }
 
-.page-header-cart-full:hover path,
-.page-header-cart-full:hover circle,
-.page-header-cart-full:focus path,
-.page-header-cart-full:focus circle {
-  fill: #ffffff;
+.page-header-cart-full:hover, 
+.page-header-cart-full:focus {
 
 }
 
@@ -282,7 +279,7 @@ input[type="search"]:focus + button path {
   line-height: 1;
   align-items: center;
   text-decoration: none;
-  padding: 10px 47px 10px 71px;
+  padding: 8px 47px 11px 71px;
   letter-spacing: 0.1px;
 }
 
@@ -559,7 +556,7 @@ input[type="search"]:focus + button path {
   font-size: 24px;
   font-weight: bold;
   line-height: 70px;
-  margin: 0px auto 42px 21px;
+  margin: 0px auto 41px 21px;
   color: white;
 }
 
@@ -694,6 +691,7 @@ input[type="radio"] {
   color: #ffffff;
   top: 22px;
   left: 22px;
+  letter-spacing: 1.1px;
 }
 
 .slider-slides p {
@@ -706,6 +704,7 @@ input[type="radio"] {
   top: 40px;
   line-height: 1.33;
   margin: 20px 0px 0px 25px;
+  letter-spacing: -0.3px;
 }
 
 .slider-slides a {
@@ -837,8 +836,10 @@ input[type="radio"] {
   color: #32425c;
   text-transform: uppercase;
   margin: 28px auto 30px 30px;
-  letter-spacing: -1px;
+  letter-spacing: -0.9px;
 }
+
+
 
 .producers h2 {
   margin-left: 25px;
@@ -862,6 +863,23 @@ input[type="radio"] {
   border-radius: 5px;
 }
 
+/*.popular header :last-child,
+.producers header :last-child {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background: #ee3643;
+  min-width: 253px;
+  height: 38px;
+  margin: 20px 24px 21px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}*/
 
 .popular-header > a:hover,
 .producers-header > a:hover {
@@ -881,7 +899,10 @@ input[type="radio"] {
   justify-content: space-between;
 }
 
-.popular-item img[alt="Среднеразмерный перфоратор BOSCH BFG 2000 для широкого спектра работ. SDS-Plus, 2.6 Дж, 890 об/мин, 4350 уд/мин, 18 В, Li-Ion, 6 А*ч, 2хАКБ, кейс, 3.5 кг"],
+.popular-item img[alt="Среднеразмерный перфоратор BOSCH BFG 2000 для широкого спектра работ. SDS-Plus, 2.6 Дж, 890 об/мин, 4350 уд/мин, 18 В, Li-Ion, 6 А*ч, 2хАКБ, кейс, 3.5 кг"] {
+  margin-left: -8px;
+}
+
 .product-card img[alt="Среднеразмерный перфоратор BOSCH BFG 2000 для широкого спектра работ. SDS-Plus, 2.6 Дж, 890 об/мин, 4350 уд/мин, 18 В, Li-Ion, 6 А*ч, 2хАКБ, кейс, 3.5 кг"] {
   margin-left: -8px;
 }
@@ -1063,6 +1084,10 @@ input[type="radio"] {
   padding-left: 5px;
 }
 
+.producers-list img[alt="Hitachi"] {
+  padding-top: 5px;
+}
+
 
 .services {
   display: flex;
@@ -1094,7 +1119,7 @@ input[type="radio"] {
 
 .services-block > h3:first-child {
   width: 460px;
-  margin-top: 60px;
+  margin-top: 65px;
   margin-bottom: 32px;
   margin-right: 460px;
   margin-right: calc(100% - 460px);
@@ -1135,7 +1160,7 @@ input[type="radio"] {
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 18.4px 10px 18.4px 22px;
+  padding: 17px 10px 18.4px 22px;
 }
 
 input[type="radio"] {
@@ -1307,7 +1332,7 @@ input[type="radio"] {
 
 .about-us a {
   width: 220px;
-  margin: 34px auto 80px 0px;
+  margin: 36px auto 80px 0px;
   
 }
 
@@ -1335,7 +1360,7 @@ input[type="radio"] {
   text-align: left;
   color: #000000;
   text-transform: uppercase;
-  margin: 76px auto 24px 0px;
+  margin: 76px auto 26px 0px;
   min-width: 302px;
   letter-spacing: -0.9px;
 }
@@ -1365,7 +1390,7 @@ input[type="radio"] {
 }
 
 .contacts p {
-  margin: 0px auto 30px 0px;
+  margin: 0px auto 33px 0px;
   width: 179px;
   min-height: 35px;
 }
@@ -1859,7 +1884,6 @@ main .container {
   left: 72.6%;
   display: initial;
   z-index: 1;
-  top: 0px;
 }
 
 .product-card:last-child .new-product {
@@ -2187,7 +2211,7 @@ main .container {
   font-size: 30px;
   line-height: 1;
   color: #000000;
-  padding-top: 67px;
+  padding-top: 68px;
   text-transform: uppercase;
   letter-spacing: -0.5px;
   margin-bottom: 26px;
@@ -2449,7 +2473,7 @@ main .container {
   min-height: 23px;
   padding: 0px;
   color: #ffffff;
-  margin: 39px auto 0px 0px;
+  margin: 37px auto 0px 0px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.03;
@@ -2464,7 +2488,7 @@ main .container {
   text-decoration: none;
   list-style-type: none;
   display: flex;
-  margin: 32px 0px 21px 0px;
+  margin: 34px 0px 21px 0px;
   padding: 0px;
   position: relative;
 }
@@ -2510,7 +2534,7 @@ main .container {
 
 .footer-contacts {
   display: flex;
-  margin: 37px -10px 33px 121px;
+  margin: 37px -10px 33px 119px;
 }
 
 .footer-contacts .mail {
@@ -2628,6 +2652,7 @@ main .container {
   background: #ffffff;
   font-size: 18px;
   z-index: 2;
+  padding: 50px 60px 0px;
   box-sizing: border-box;
 }
 
@@ -2641,7 +2666,6 @@ main .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 50px;
 }
 
 .popup-feedback button[type="submit"] {
@@ -2706,7 +2730,6 @@ main .container {
   width: 100%;
   resize: none;
   margin-bottom: 37px;
-  height: 114px;
 }
 
 .textarea-feedback textarea:hover {

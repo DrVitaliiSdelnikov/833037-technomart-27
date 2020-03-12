@@ -178,7 +178,8 @@ input[type="search"]:focus + button path {
   height: 42px;
   align-items: center;
   box-sizing: border-box;
-  padding-right: 3px;
+  padding-right: 2px;
+  margin-top: -1px;
 }
 
 
@@ -245,7 +246,7 @@ input[type="search"]:focus + button path {
   font-style: italic;
   font-size: 16px;
   line-height: 1.44;
-  margin: 48px auto auto 52px;
+  margin: 49px auto 4px 52px;
   white-space: pre-line;
 }
 
@@ -260,7 +261,7 @@ input[type="search"]:focus + button path {
   color: #32425c;
   white-space: nowrap;
   position: relative;
-  margin: 47px 0px auto 45px;
+  margin: 48px 0px auto 45px;
 }
 
 .page-header-contacts span {
@@ -279,7 +280,7 @@ input[type="search"]:focus + button path {
   line-height: 1;
   align-items: center;
   text-decoration: none;
-  padding: 8px 47px 11px 71px;
+  padding: 9px 47px 10px 70.5px;
   letter-spacing: 0.1px;
 }
 
@@ -362,8 +363,10 @@ input[type="search"]:focus + button path {
 }
 
 .username svg {
-  margin: 0px 7px 0px 13px;
+  margin: 9px 9.6px 0px 13px;
 }
+
+
 
 .user-navigation a {
   color: #32425c;
@@ -377,7 +380,7 @@ input[type="search"]:focus + button path {
 .container .user-navigation {
   width: 300px;
   padding: 0px;
-  margin: 47px 0px auto 51px;
+  margin: 47px 0px auto 50px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -392,7 +395,7 @@ input[type="search"]:focus + button path {
 }
 
 .logout svg {
-  margin: 10px 10px auto 38px;
+  margin: 12px 10px auto 36px;
 }
 
 .order-management {
@@ -409,8 +412,8 @@ input[type="search"]:focus + button path {
 
 .user-navigation .user-account::before {
   display: block;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   position: absolute;
   content: "";
@@ -421,6 +424,7 @@ input[type="search"]:focus + button path {
 
 .user-navigation .user-account {
   margin-top: 10px;
+  margin-left: -1px;
 }
 
 .user-orders:hover,
@@ -437,7 +441,7 @@ input[type="search"]:focus + button path {
 
 .user-navigation .username {
   font-size: 21px;
-  line-height: 42px;
+  line-height: 38px;
   color: #000000;
   background: #ffffff;
   display: block;
@@ -475,29 +479,41 @@ input[type="search"]:focus + button path {
 }
 
 
-
-.site-navigation li:first-child {
-  flex-grow: 1.8;
+.site-navigation a[href="index.html"] {
+  width: 155px;
 }
 
 
-.site-navigation li:last-child {
-  flex-grow: 1.9;
+.site-navigation .navigation-company {
+	width: 95px;
 }
 
-.site-navigation li:nth-child(2),
-.site-navigation li:nth-child(6) {
-  flex-grow: 1.1;
+
+.site-navigation a[href="catalog.html"] {
+	width: 140px;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(5) {
-  flex-grow: 1.4;
+
+.site-navigation .navigation-news {
+	width: 85px;
 }
 
-.site-navigation li {
-  flex-grow: 1;
+
+.site-navigation .navigation-special {
+  width: 205px;
 }
+
+
+.site-navigation .navigation-delivery {
+  width: 100px;
+}
+
+
+.site-navigation .navigation-contacts {
+  padding-right: 10px;
+  width: 160px;
+}
+
 
 
 .site-navigation a {
@@ -507,6 +523,8 @@ input[type="search"]:focus + button path {
   justify-content: center;
   align-items: center;
   height: 55px;
+  box-sizing: border-box;
+  padding-top: 2px;
 }
 
 .site-navigation a:hover {
@@ -544,7 +562,7 @@ input[type="search"]:focus + button path {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 38px;
-  margin: 15px 0 18px 22px;
+  margin: 15px 0 18px 25px;
   text-decoration: none;
 }
 
@@ -555,8 +573,8 @@ input[type="search"]:focus + button path {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   font-weight: bold;
-  line-height: 70px;
-  margin: 0px auto 41px 21px;
+  line-height: 72px;
+  margin: 0px auto 41px 22.5px;
   color: white;
 }
 
@@ -586,7 +604,7 @@ input[type="search"]:focus + button path {
   background-color: #ffbf47;
   background-image: url(../img/svg/icon-1.svg);
   background-repeat: no-repeat;
-  background-position: 83% 54%;
+  background-position: 83.3% 54%;
 }
 
 .materials-card a {
@@ -601,7 +619,7 @@ input[type="search"]:focus + button path {
   background-color: #3bbce3;
   background-image: url(../img/svg/icon-2.svg);
   background-repeat: no-repeat;
-  background-position: 88% 53%;
+  background-position: 87.7% 53%;
   margin-bottom: 20px;
 }
 
@@ -623,6 +641,7 @@ input[type="search"]:focus + button path {
 
 .equipment-card a {
   background: #c783c3;
+  margin: 15px 0 18px 23px;
 }
 
 .equipment-card img {
@@ -660,16 +679,16 @@ input[type="radio"] {
   display: flex;
   position: absolute;
   z-index: 1;
-  top: 75%;
-  right: 47%;
+  top: 76%;
+  right: 46.5%;
 }
 
 .slider-labels label {
   display: flex;
-  margin: 0 3px;
+  margin: 0 5.5px;
   width: 6px;
   height: 6px;
-  border: 4px solid white;
+  border: 2px solid white;
   border-radius: 50%;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
   cursor: pointer;
@@ -742,8 +761,8 @@ input[type="radio"] {
   position: absolute;
   width: 22px;
   height: 40px;
-  bottom: 75px;
-  right: 280px;
+  bottom: 76px;
+  right: 285px;
 }
 
 .slider-labels label[for="btn-2"]::after {
@@ -752,7 +771,7 @@ input[type="radio"] {
   position: absolute;
   width: 22px;
   height: 40px;
-  bottom: 75px;
+  bottom: 75.5px;
   right: -270px;
 }
 
@@ -770,13 +789,14 @@ input[type="radio"] {
   background-color: #8ed78f;
   background-image: url(../img/svg/icon-4.svg);
   background-repeat: no-repeat;
-  background-position: 81% 50%;
+  background-position: 81.5% 50%;
   margin-bottom: 20px;
   position: relative;
 }
 
 .sale-card a {
   background: #81c281;
+  margin: 15px 0 18px 23px;
 }
 
 .sale-card img {
@@ -787,12 +807,13 @@ input[type="radio"] {
   background-color: #ffbf47;
   background-image: url(../img/svg/icon-5.svg);
   background-repeat: no-repeat;
-  background-position: 86% 52%;
+  background-position: 86% 53%;
   margin-bottom: 20px;
 }
 
 .delivery-card a {
   background: #e6ad3e;
+  margin: 15px 0 18px 23px;
 }
 
 .delivery-card img {
@@ -835,7 +856,7 @@ input[type="radio"] {
   text-align: left;
   color: #32425c;
   text-transform: uppercase;
-  margin: 28px auto 30px 30px;
+  margin: 28px auto 30px 28px;
   letter-spacing: -0.9px;
 }
 
@@ -863,24 +884,6 @@ input[type="radio"] {
   border-radius: 5px;
 }
 
-/*.popular header :last-child,
-.producers header :last-child {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.29;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-  background: #ee3643;
-  min-width: 253px;
-  height: 38px;
-  margin: 20px 24px 21px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-}*/
-
 .popular-header > a:hover,
 .producers-header > a:hover {
   background: #cb2834;
@@ -899,13 +902,13 @@ input[type="radio"] {
   justify-content: space-between;
 }
 
-.popular-item img[alt="Среднеразмерный перфоратор BOSCH BFG 2000 для широкого спектра работ. SDS-Plus, 2.6 Дж, 890 об/мин, 4350 уд/мин, 18 В, Li-Ion, 6 А*ч, 2хАКБ, кейс, 3.5 кг"] {
+/*.popular-item img[alt="Среднеразмерный перфоратор BOSCH BFG 2000 для широкого спектра работ. SDS-Plus, 2.6 Дж, 890 об/мин, 4350 уд/мин, 18 В, Li-Ion, 6 А*ч, 2хАКБ, кейс, 3.5 кг"] {
   margin-left: -8px;
 }
 
 .product-card img[alt="Среднеразмерный перфоратор BOSCH BFG 2000 для широкого спектра работ. SDS-Plus, 2.6 Дж, 890 об/мин, 4350 уд/мин, 18 В, Li-Ion, 6 А*ч, 2хАКБ, кейс, 3.5 кг"] {
   margin-left: -8px;
-}
+}*/
 
 .popular-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -932,12 +935,12 @@ input[type="radio"] {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.11;
+  line-height: 1.15;
   text-align: center;
   color: #000000;
   min-width: 155px;
   min-height: 33px;
-  margin: 3px 30px 13px 30px;
+  margin: 5px 30px 11px 29.5px;
 }
 
 .popular-list .popular-item {
@@ -975,7 +978,7 @@ input[type="radio"] {
   color: #a9a9a9;
   text-decoration: line-through;
   padding: 0px;
-  margin: 11px 0px 0px 0px;
+  margin: 10px 0px 0px 5px;
 }
 
 .popular-item:last-child .normal-price {
@@ -990,7 +993,7 @@ input[type="radio"] {
   width: 141px;
   border-radius: 3px;
   min-height: 37px;
-  margin: 11px 15px 8px 41px;
+  margin: 10.5px 15px 8px 41px;
 }
 
 .product-list .sale-price:after,
@@ -1001,7 +1004,7 @@ input[type="radio"] {
   right: -20px;
   width: 0;
   height: 0;
-  border: 20px solid white;
+  border: 18.5px solid white;
   border-left-color: #ee3643;
 }
 
@@ -1431,7 +1434,7 @@ input[type="radio"] {
   color: #000000;
   counter-reset: flag;
   display: flex;
-  margin: 10px 0px 13px 0px;
+  margin: 12px 0px 11px 0px;
   padding: 0px;
   text-transform: uppercase;
   position: relative;
@@ -1448,7 +1451,7 @@ input[type="radio"] {
   padding: 0px;
   list-style-type: none;
   background-color: white;
-  margin-right: 40px;
+  margin-right: 40.5px;
 }
 
 .breadcrumbs a {
@@ -1517,7 +1520,7 @@ main .container {
 }
 
 .catalog-form {
-  margin-top: 20px;
+  margin-top: 21px;
   min-width: 220px;
 }
 
@@ -1525,7 +1528,7 @@ main .container {
   color: #f7f3ec;
   height: 1px;
   border: none;
-  margin: 0 0 15px 0;
+  margin: 0 0 16px 0;
   background-color: #f7f3ec;
 }
 
@@ -1566,9 +1569,9 @@ main .container {
   width: 220px;
   min-height: 38px;
   background-color: #f7f3ec;
-  padding-left: 20px;
+  padding-left: 19px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 
@@ -1583,7 +1586,7 @@ main .container {
   background-position: 50% 50%, 50% 50%;
   background-repeat: no-repeat, no-repeat;
   background-size: 142px, 180px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -1612,20 +1615,20 @@ main .container {
 
 .price-slider .min-price-dot {
   position: absolute;
-  top: 35%;
+  top: 36%;
   right: 82%;
 }
 
 .price-slider .max-price-dot {
   position: absolute;
-  top: 35%;
+  top: 36%;
   right: 18%;
 }
 
 .catalog-form-slider {
   border: 0 none;
   padding: 0px;
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 27px 0px;
 }
 
 .catalog-form-slider > div {
@@ -1667,11 +1670,12 @@ main .container {
   text-align: left;
   color: #000000;
   text-transform: uppercase;
-  margin: 0px 0px 14px 0px;
+  margin: 0px 0px 14px -2px;
 }
 
 .catalog-powering-type legend {
-  margin: 0px 0px 12px 0px;
+  margin: 0px 0px 12px -2px;
+  letter-spacing: 0.6px;
 }
 
 .catalog-producers-filter {
@@ -1696,13 +1700,13 @@ main .container {
 .catalog-powering-type {
   border: 0 none;
   padding: 0px;
-  margin: 0px 0px 60px 0px;
+  margin: 0px 0px 57px 0px;
 }
 
 .catalog-producers-filter li,
 .catalog-powering-type li {
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   position: relative;
 }
 
@@ -1881,7 +1885,7 @@ main .container {
 
 .product-card:nth-child(2n + 3) .new-product {
   position: absolute;
-  left: 72.6%;
+  left: 73.5%;
   display: initial;
   z-index: 1;
 }
@@ -1889,7 +1893,7 @@ main .container {
 .product-card:last-child .new-product {
   display: none;
   position: absolute;
-  left: 72.6%;
+  left: 73.5%;
 }
 
 .product-card:nth-child(3n) .normal-price {
@@ -1920,8 +1924,7 @@ main .container {
   color: #000000;
   text-transform: uppercase;
   list-style-type: none;
-  //flex-grow: 1;
-  margin-left: 20px;
+  margin-left: 19px;
 }
 
 .selection-buttons li:nth-child(2) {
@@ -2009,7 +2012,7 @@ main .container {
 }
 
 .selection-arrows li {
-  margin: 0px 20px 0px 0px;
+  margin: 0px 18px 0px 0px;
 }
 
 .less-to-more:hover path,
@@ -2043,12 +2046,12 @@ main .container {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.11;
+  line-height: 1.14;
   text-align: center;
   color: #000000;
   padding: 0px;
   min-height: 33px;
-  margin: 5px 30px 13px 12px;
+  margin: 5px 28px 11px 14px;
   width: 190px;
 }
 
@@ -2153,7 +2156,7 @@ main .container {
   white-space: nowrap;
   display: flex;
   list-style-type: none;
-  margin: 31px auto 55px 235px;
+  margin: 32px auto 55px 235px;
   text-transform: uppercase;
 }
 
@@ -2223,13 +2226,14 @@ main .container {
   line-height: 1.85;
   color: #000000;
   padding: 0px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
   width: 940px;
   margin: 0px;
+  letter-spacing: 0.05px;
 }
 
 .hammer-drill-info span {
-  letter-spacing: 0.13px;
+  letter-spacing: 0.15px;
 }
 
 
@@ -2412,7 +2416,7 @@ main .container {
   display: block;
   width: 335px;
   height: 40px;
-  margin: 15px auto 53px 3px;
+  margin: 17px auto 53px 3px;
   line-height: 1.33;
   text-decoration: none;
 }
@@ -2426,7 +2430,7 @@ main .container {
 .page-footer-offers {
   display: flex;
   justify-content: space-between;
-  margin: 15px 0px 53px 76px;
+  margin: 17px 0px 53px 77px;
   flex-grow: 1;
   padding: 0px;
   list-style: none;
@@ -2476,7 +2480,7 @@ main .container {
   margin: 37px auto 0px 0px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.03;
+  line-height: 1.13;
 }
 
 .page-footer-social-feedback a {
@@ -2534,7 +2538,7 @@ main .container {
 
 .footer-contacts {
   display: flex;
-  margin: 37px -10px 33px 119px;
+  margin: 37px -12px 34px 119px;
 }
 
 .footer-contacts .mail {
@@ -2545,6 +2549,7 @@ main .container {
   word-spacing: normal;
   margin-right: 50px;
   color: #ffffff;
+  line-height: 1.13;
 }
 
 .footer-contacts .url {
@@ -2554,6 +2559,7 @@ main .container {
   height: 34px;
   word-spacing: normal;
   color: #ffffff;
+  line-height: 1.13;
 }
 
 .mail a:hover,
@@ -2597,6 +2603,7 @@ main .container {
   width: 30px;
   height: 5px;
   background-color: #ee3643;
+  z-index: 3; 
 }
 
 .close-button::before {

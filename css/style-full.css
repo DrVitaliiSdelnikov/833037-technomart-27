@@ -27,7 +27,8 @@ img {
 .page-navigation {
   background: #f4f7f9;
   min-width: 1200px;
-  min-height: 320px;
+  min-height: 280px;
+  padding-bottom: 40px;
 }
 
 .page-header-top {
@@ -140,7 +141,10 @@ input[type="search"]:focus + button path {
   color: #ffffff;
   padding: 0px;
   flex-wrap: wrap;
+  overflow: hidden;
 }
+
+
 
 .page-header-bookmark svg {
   margin: 12px 13px 14px 17px;
@@ -179,9 +183,8 @@ input[type="search"]:focus + button path {
   align-items: center;
   box-sizing: border-box;
   padding-right: 2px;
-  margin-top: -1px;
+  margin-bottom: -1px;
 }
-
 
 
 .page-header-consumer-block li {
@@ -266,7 +269,7 @@ input[type="search"]:focus + button path {
 
 .page-header-contacts span {
   display: block;
-  padding-top: 9px;
+  padding-top: 11px;
   line-height: 10px;
   padding-left: 2px;
 }
@@ -280,7 +283,7 @@ input[type="search"]:focus + button path {
   line-height: 1;
   align-items: center;
   text-decoration: none;
-  padding: 9px 47px 10px 70.5px;
+  padding: 8.5px 47px 10px 71.5px;
   letter-spacing: 0.1px;
 }
 
@@ -363,7 +366,7 @@ input[type="search"]:focus + button path {
 }
 
 .username svg {
-  margin: 9px 9.6px 0px 13px;
+  margin: 10px 9.6px 0px 10px;
 }
 
 
@@ -395,7 +398,7 @@ input[type="search"]:focus + button path {
 }
 
 .logout svg {
-  margin: 12px 10px auto 36px;
+  margin: 12px 10px auto 35px;
 }
 
 .order-management {
@@ -679,7 +682,7 @@ input[type="radio"] {
   display: flex;
   position: absolute;
   z-index: 1;
-  top: 76%;
+  top: 77%;
   right: 46.5%;
 }
 
@@ -709,7 +712,7 @@ input[type="radio"] {
   position: absolute;
   color: #ffffff;
   top: 22px;
-  left: 22px;
+  left: 24px;
   letter-spacing: 1.1px;
 }
 
@@ -723,7 +726,7 @@ input[type="radio"] {
   top: 40px;
   line-height: 1.33;
   margin: 20px 0px 0px 25px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.4px;
 }
 
 .slider-slides a {
@@ -740,6 +743,9 @@ input[type="radio"] {
   line-height: 38px;
   position: absolute;
   top: 190px;
+  box-sizing: border-box;
+  padding: 1px 0px 0px 5px;
+  letter-spacing: 0.1px;
 }
 
 .slider-slides a:hover {
@@ -856,15 +862,18 @@ input[type="radio"] {
   text-align: left;
   color: #32425c;
   text-transform: uppercase;
-  margin: 28px auto 30px 28px;
-  letter-spacing: -0.9px;
 }
 
-
+.popular h2 {
+  margin: 29px auto 29px 28px;
+  letter-spacing: -0.79px;
+}
 
 .producers h2 {
-  margin-left: 25px;
+  margin: 31px auto 28px 27px;
+  letter-spacing: -0.79px;
 }
+
 
 .popular-header > a,
 .producers-header > a {
@@ -902,14 +911,6 @@ input[type="radio"] {
   justify-content: space-between;
 }
 
-/*.popular-item img[alt="Среднеразмерный перфоратор BOSCH BFG 2000 для широкого спектра работ. SDS-Plus, 2.6 Дж, 890 об/мин, 4350 уд/мин, 18 В, Li-Ion, 6 А*ч, 2хАКБ, кейс, 3.5 кг"] {
-  margin-left: -8px;
-}
-
-.product-card img[alt="Среднеразмерный перфоратор BOSCH BFG 2000 для широкого спектра работ. SDS-Plus, 2.6 Дж, 890 об/мин, 4350 уд/мин, 18 В, Li-Ion, 6 А*ч, 2хАКБ, кейс, 3.5 кг"] {
-  margin-left: -8px;
-}*/
-
 .popular-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -940,7 +941,7 @@ input[type="radio"] {
   color: #000000;
   min-width: 155px;
   min-height: 33px;
-  margin: 5px 30px 11px 29.5px;
+  margin: 3.5px 30px 11px 29.5px;
 }
 
 .popular-list .popular-item {
@@ -981,19 +982,31 @@ input[type="radio"] {
   margin: 10px 0px 0px 5px;
 }
 
+
+.popular-item .normal-price {
+  margin: 10px 0px 0px 4px;
+}
+
 .popular-item:last-child .normal-price {
   visibility: hidden;
 }
 
 .sale-price {
   position: relative;
-  line-height: 35px;
+  line-height: 38px;
   background: #ee3643;
   color: #ffffff;
   width: 141px;
   border-radius: 3px;
-  min-height: 37px;
-  margin: 10.5px 15px 8px 41px;
+  min-height: 38px;
+  margin: 10.5px 15px 8px 42px;
+  padding-right: 4px;
+  box-sizing: border-box;
+}
+
+.popular-item .sale-price {
+  margin: 10px 15px 8px 42px;
+  padding-right: 4px;
 }
 
 .product-list .sale-price:after,
@@ -1004,7 +1017,7 @@ input[type="radio"] {
   right: -20px;
   width: 0;
   height: 0;
-  border: 18.5px solid white;
+  border: 19px solid white;
   border-left-color: #ee3643;
 }
 
@@ -1027,7 +1040,7 @@ input[type="radio"] {
 
 .producers {
   min-width: 940px;
-  margin-bottom: 66px;
+  margin-bottom: 65px;
 }
 
 .producers .container {
@@ -1055,7 +1068,7 @@ input[type="radio"] {
 
 .producers-list li {
   width: 220px;
-  height: 142px;
+  height: 143px;
   position: relative;
   background: #ffffff;
   border: solid 1px #eaeaea;
@@ -1075,20 +1088,35 @@ input[type="radio"] {
 }
 
 .producers-list img[alt="Makita"] {
-  padding-bottom: 5px;
+  padding-bottom: 3px;
+  padding-right: 2px;
 }
 
 .producers-list img[alt="Интерскол"] {
   padding-bottom: 13px;
 }
 
+.producers-list img[alt="Dewalt"] {
+  padding-bottom: 3px;
+}
+
 .producers-list img[alt="Metabo"] {
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-bottom: 6px;
+  padding-left: 8px;
 }
 
 .producers-list img[alt="Hitachi"] {
-  padding-top: 5px;
+  padding-top: 6px;
+  padding-left: 4px;
+}
+
+.producers-list img[alt="LG"] {
+  padding-right: 3px;
+}
+
+.producers-list img[alt="AEG Solutions"] {
+  padding-bottom: 1px;
+  padding-left: 4px;
 }
 
 
@@ -1163,7 +1191,8 @@ input[type="radio"] {
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 17px 10px 18.4px 22px;
+  padding: 16px 10px 18.4px 22px;
+  min-height: 61px;
 }
 
 input[type="radio"] {
@@ -1223,6 +1252,7 @@ input[type="radio"] {
   width: 400px;
   margin: -6px 0px 70px 0px;
   line-height: 1.85;
+  letter-spacing: 0.04px;
 }
 
 .services-block-right h3 {
@@ -1335,7 +1365,7 @@ input[type="radio"] {
 
 .about-us a {
   width: 220px;
-  margin: 36px auto 80px 0px;
+  margin: 39px auto 80px 0px;
   
 }
 
@@ -1343,7 +1373,7 @@ input[type="radio"] {
   display: block;
   width: 300px;
   min-height: 158px;
-  margin: 0 0 0 0;
+  margin: -3px 0 0 3px;
 }
 
 .open-popup {
@@ -1352,7 +1382,7 @@ input[type="radio"] {
 
 .contacts a {
   width: 300px;
-  margin: 42px 0px 80px 0px;
+  margin: 41px 0px 86px 4px;
 }
 
 .about-us h2,
@@ -1363,13 +1393,14 @@ input[type="radio"] {
   text-align: left;
   color: #000000;
   text-transform: uppercase;
-  margin: 76px auto 26px 0px;
+  margin: 78px auto 26px 0px;
   min-width: 302px;
   letter-spacing: -0.9px;
 }
 
 .contacts h2 {
   letter-spacing: -0.4px;
+  margin: 78px auto 26px 2px;
 }
 
 .about-us-contacts p {
@@ -1393,7 +1424,7 @@ input[type="radio"] {
 }
 
 .contacts p {
-  margin: 0px auto 33px 0px;
+  margin: 0px auto 34px 3px;
   width: 179px;
   min-height: 35px;
 }
@@ -1409,7 +1440,7 @@ input[type="radio"] {
 }
 
 .about-us ul {
-  margin: 0px 420px 0px 0px;
+  margin: -1px 420px 0px 0px;
   padding-left: 30px;
 }
 
@@ -1423,8 +1454,6 @@ input[type="radio"] {
   margin-bottom: 20px;
   margin-left: 6px;
 }
-
-/*каталог*/
 
 .breadcrumbs {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1474,7 +1503,9 @@ input[type="radio"] {
   border-radius: 50px 0 0 0;
   box-shadow: 4px 4px 0 1px #dddddd;
   content: "";
-  transform: rotate(-45deg) scale(0.33);
+  -webkit-transform: rotate(-45deg) scale(0.33);
+  -ms-transform: rotate(-45deg) scale(0.33);
+          transform: rotate(-45deg) scale(0.33);
 }
 
 .breadcrumbs-homepage a::after {
@@ -1598,7 +1629,7 @@ main .container {
   display: block;
   background-color: #000000;
   left: 105px;
-  top: 110px;
+  top: 108px;
 }
 
 
@@ -1659,6 +1690,11 @@ main .container {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.catalog-form-slider input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 
 .catalog-producers-filter legend,
 .catalog-powering-type legend,
@@ -1886,7 +1922,7 @@ main .container {
 .product-card:nth-child(2n + 3) .new-product {
   position: absolute;
   left: 73.5%;
-  display: initial;
+  display: inline;
   z-index: 1;
 }
 
@@ -1955,7 +1991,7 @@ main .container {
   border-bottom: solid 2px #ee3643;
 }
 
-.selection-buttons a:focus {
+.selection-buttons a:active {
   color: #ee3643;
   border-bottom: none;
 }
@@ -2020,8 +2056,8 @@ main .container {
   fill: #000000;
 }
 
-.less-to-more:focus path,
-.more-to-less:focus path {
+.less-to-more:active path,
+.more-to-less:active path {
   fill: #ee3643;
 }
 
@@ -2187,6 +2223,7 @@ main .container {
 
 .pagination .current {
   background-color: #ee3643;
+  color: #ffffff;
 }
 
 .pagination a:hover {
@@ -2226,8 +2263,8 @@ main .container {
   line-height: 1.85;
   color: #000000;
   padding: 0px;
-  padding-bottom: 68px;
-  width: 940px;
+  padding-bottom: 71px;
+  width: 942px;
   margin: 0px;
   letter-spacing: 0.05px;
 }
@@ -2640,7 +2677,7 @@ main .container {
 .popup-map a {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; 
   z-index: 1;
 
   margin: 0;
@@ -2758,28 +2795,55 @@ main .container {
   animation: shake 0.6s;
 }
 
-@keyframes bounce {
+
+@-webkit-keyframes bounce {
   0% {
-    transform: translateX(2000px);
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
   }
 
   70% {
-    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
   }
 
   90% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+
+  70% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+
+  90% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -2787,14 +2851,41 @@ main .container {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -2802,4 +2893,182 @@ main .container {
   display: block;
 
   animation: bounce 0.6s;
+}
+
+
+@-moz-document url-prefix() {
+  .page-header-consumer-block a {
+    margin-top: 0px; 
+  }
+
+  .page-header-contacts {
+    margin: 47px 0px auto 45px;
+
+  }
+
+  .page-header-contacts a {
+    padding: 9.5px 47px 10px 70px;
+  }
+
+  .page-header-contacts a::before {
+    left: 15px;
+    top: 13px;
+  }
+
+  .registration a {
+    padding: 11px 0 12px 0;
+  }
+
+  .page-header-contacts span {
+    padding-top: 9px;
+    padding-left: 0px
+  }
+
+  .user-navigation a {
+    padding-top: 0px; 
+  }
+
+  .user-navigation .user-orders {
+    margin: 10px 33px 0px -41px;
+  }
+
+  .username svg {
+    margin: 11px 8px 0px 12.5px;
+  }
+
+  .breadcrumbs {
+    margin: 12px 0px 12px 0px;
+  }
+
+  .breadcrumbs a {
+    letter-spacing: 0.07px;
+    line-height: 35px;
+
+  }
+
+  .breadcrumbs li {
+    margin-right: 40px;
+  }
+
+  .breadcrumbs a::after {
+    top: 5px;
+    right: -28px;
+  }
+
+  .breadcrumbs-homepage a::after {
+    right: -15px;
+  }
+
+  .catalog-form > div {
+    margin-bottom: 10px;
+  }
+
+  .catalog-form-slider {
+    margin: 0px 0px 26px 0px;
+  }
+
+  .price-slider::before {
+    top: 108px;
+  }
+
+  .catalog-producers-filter li, 
+  .catalog-powering-type li {
+    margin-bottom: 20px;
+  }
+
+  .catalog-powering-type legend {
+    margin: 0px 0px 10.5px -2px;
+  }
+
+  .product-card h3 {
+    margin: 5px 28px 10.5px 14px;
+  }
+
+  .product-list .sale-price::after, 
+  .popular-item .sale-price::after {
+    top: -0.5px;
+    border: 20.1px solid white;
+    border-left-color: #ee3643;
+    
+  }
+
+  .normal-price {
+    margin: 10px 0px 0px 3px;
+  }
+
+  .pagination {
+    margin: 31px auto 59px 235px;
+  }
+
+  .pagination a {
+    line-height: 37px;
+  }
+
+  .hammer-drill-info h2 {
+    padding-top: 64.5px;
+  }
+
+  .hammer-drill-info p {
+    letter-spacing: 0.01px;
+    width: 942px;
+    padding-bottom: 68.5px;
+  }
+
+  .footer-site-nav {
+    margin-left: 172px;
+  }
+
+  .page-footer-info-offers p {
+    margin: 16px auto 53px 3px;
+  }
+
+  .page-footer-offers {
+    margin: 16px 0px 53px 77px;
+  }
+
+  .catalog-powering-type {
+    margin: 0px 0px 59px 0px;
+  }
+
+  .popular-list h3 {
+    margin: 3.5px 30px 11px 29.5px;
+  }
+
+  .services-block-right h3 {
+    margin: -3px auto 25px 80px;
+  }
+
+  .about-us h2, 
+  .contacts h2 {
+    margin: 76px auto 26px 0px;
+  }
+
+  .about-us p:nth-of-type(2) {
+    margin: 0px auto 22px 0px;
+  }
+
+  .about-us a {
+    margin: 37px auto 80px 0px;
+  }
+
+  .contacts h2 {
+    margin: 76px auto 26px 2px;
+  }
+
+  .contacts p {
+    margin: 0px auto 35px 3px;
+  }
+
+  .contacts a {
+    margin: 40.5px 0px 86px 4px;
+  }
+
+  .footer-contacts .mail {
+    margin-right: 52px;
+  }
+
+  .price-dot {
+    width: 5px;
+    height: 5px;
+  }
 }

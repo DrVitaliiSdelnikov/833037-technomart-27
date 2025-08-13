@@ -14,6 +14,8 @@ var text = popup.querySelector("[name=text]");
 
 var isStorageSupport = true;
 var storage = "";
+const justUselessConst = 1;
+const model = {};
 
 try {
 storage = localStorage.getItem("fullname");
